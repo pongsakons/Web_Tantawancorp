@@ -5,22 +5,26 @@
   <title>Google Maps Multiple Markers</title>
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjgXYbVxuMX9CRNnH0j_qhokgNFSkbmYU&sensor=FALSE"></script>
+<!--  -->
 </head>
-<body>
-  <div id="map" style="width: 500px; height: 400px;"></div>
-
+<body onload="onLoadMap(5,2)">
+  <div id="map" style="width: 700px; height: 700px;"></div>
+  <button onclick="onLoadMap(5,2)">dl1</button>
+  <button onclick="onLoadMap(7,2)">dl2</button>
+  <button onclick="onLoadMap(7,1)">dl3</button>
+  <button onclick="onLoadMap(7,0)">dl4</button>
   <script type="text/javascript">
+  var onLoadMap = function (varzoom,varloc)
+  {
     var locations = [
-      ['Bondi Beach', -33.890542, 151.274856, 4],
-      ['Coogee Beach', -33.923036, 151.259052, 5],
-      ['Cronulla Beach', -34.028249, 151.157507, 3],
-      ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
-      ['Maroubra Beach', -33.950198, 151.259302, 1]
+      ['สงขลา',7.1278896,100.5852306, 3],
+      ['ระยอง', 12.8301992,101.1403038, 2],
+      ['สมุทรปราการ',13.5621043, 100.5880416, 1]
     ];
 
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 10,
-      center: new google.maps.LatLng(-33.92, 151.25),
+      zoom: varzoom,
+      center: new google.maps.LatLng(locations[varloc][1], locations[varloc][2]),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
@@ -31,7 +35,7 @@
     for (i = 0; i < locations.length; i++) {
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map
+        map: map,
       });
 
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
@@ -40,7 +44,9 @@
           infowindow.open(map, marker);
         }
       })(marker, i));
+
     }
+  }
   </script>
 </body>
 </html>
