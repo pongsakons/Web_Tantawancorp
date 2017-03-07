@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title>Google Maps Multiple Markers</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Google Maps Multiple Markers</title>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjgXYbVxuMX9CRNnH0j_qhokgNFSkbmYU&sensor=FALSE"></script>
-<!--  -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjgXYbVxuMX9CRNnH0j_qhokgNFSkbmYU&sensor=FALSE"></script>
+    <!--  -->
 </head>
-<body onload="onLoadMap(5,2)">
-  <div id="map" style="width: 700px; height: 700px;"></div>
-  <button onclick="onLoadMap(5,2)">dl1</button>
-  <button onclick="onLoadMap(7,2)">dl2</button>
-  <button onclick="onLoadMap(7,1)">dl3</button>
-  <button onclick="onLoadMap(7,0)">dl4</button>
-  <script type="text/javascript">
-  var onLoadMap = function (varzoom,varloc)
-  {
-    var locations = [
-      ['สงขลา',7.1278896,100.5852306, 3],
-      ['ระยอง', 12.8301992,101.1403038, 2],
-      ['สมุทรปราการ',13.5621043, 100.5880416, 1]
-    ];
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: varzoom,
-      center: new google.maps.LatLng(locations[varloc][1], locations[varloc][2]),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
+<body onload="onLoadMap(6,2)">
+    <div id="map" style="width: 700px; height: 700px;"></div>
+    <button onclick="onLoadMap(5,2)">dl1</button>
+    <button onclick="onLoadMap(7,2)">dl2</button>
+    <button onclick="onLoadMap(7,1)">dl3</button>
+    <button onclick="onLoadMap(7,0)">dl4</button>
+    <script type="text/javascript">
+        var onLoadMap = function(varzoom, varloc) {
+            var locations = [
+                ['Songkhla Workshop', 7.1278896, 100.5852306, 3],
+                ['Rayong Workshop', 12.8301992, 101.1403038, 2],
+                ['Samutprakarn Office', 13.5621043, 100.5880416, 1]
+            ];
 
-    var infowindow = new google.maps.InfoWindow();
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: varzoom,
+                center: new google.maps.LatLng(locations[varloc][1], locations[varloc][2]),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
 
-    var marker, i;
+            var infowindow = new google.maps.InfoWindow();
 
-    for (i = 0; i < locations.length; i++) {
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map,
-      });
+            var marker, i;
 
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map,
+                });
+
+                //show title
+                // var coordInfoWindow = new google.maps.InfoWindow();
+                // coordInfoWindow.setContent(locations[i][0]);
+                // coordInfoWindow.setPosition(new google.maps.LatLng(locations[i][1], locations[i][2]));
+                // coordInfoWindow.open(map);
+
+                //1 show balloon
+                // google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                //   return function() {
+                //     infowindow.setContent(locations[i][0]);
+                //     infowindow.open(map, marker);
+                //   }
+                // })(marker, i));
+                //2 show and click
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                        onLoadMap(7, i);
+                    }
+                })(marker, i));
+
+                google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
+                    return function() {
+                        infowindow.setContent(locations[i][0]);
+                        infowindow.open(map, marker); //
+                    }
+                })(marker, i));
+
+            }
         }
-      })(marker, i));
-
-    }
-  }
-  </script>
+    </script>
 </body>
+
 </html>
