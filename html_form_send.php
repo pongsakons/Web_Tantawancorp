@@ -1,8 +1,8 @@
 <?php
-if(isset($_POST['email'])) {
+/* if(isset($_POST['email'])) {
 
     // CHANGE THE TWO LINES BELOW
-    $email_to = "Admin@tantawancorp.co.th";
+    $email_to = "admin@tantawancorp.co.th";
 
     $email_subject = "website html form submissions";
 
@@ -77,4 +77,63 @@ Thank you for contacting us. We will be in touch with you very soon.
 <?php
 }
 die();
+*/
 ?>
+
+
+<?php
+	// $strTo = $_POST["txtTo"];
+	// $strSubject = $_POST["txtSubject"];
+	// $strHeader = "Content-type: text/html; charset=windows-874\r\n"; // or UTF-8 //
+	// $strHeader .= "From: ".$_POST["txtFormName"]."<".$_POST["txtFormEmail"].">\r\nReply-To: ".$_POST["txtFormEmail"]."";
+	// $strMessage = nl2br($_POST["txtDescription"]);
+  // $headers = 'From: lljobzll@gmail.com' . "\r\n" .
+  //   'Reply-To: admin@tantawancorp.co.th' . "\r\n" .
+  //   'X-Mailer: PHP/' . phpversion();
+	// $flgSend = @mail('admin@tantawancorp.co.th','data','strMessage',$headers);  // @ = No Show Error //
+	// if($flgSend)
+	// {
+	// 	echo "Email Sending.";
+	// }
+	// else
+	// {
+	// 	echo "Email Can Not Send.";
+	// }
+
+	/***
+	Server SMTP/POP : mail.thaicreate.com
+	Email Account : webmaster@thaicreate.com
+	Password : 123456
+	*/
+$message_body  ='admin send';
+	require_once('PHPMailer-master/class.phpmailer.php');
+ require_once("PHPMailer-master/class.smtp.php");
+        $mail = new PHPMailer(true);
+        $mail->IsSMTP();
+        try {
+            $mail->Encoding = "quoted-printable";
+            $mail->CharSet = "UTF-8";
+
+            // send mail by gmail
+            $mail->Host = 'ssl://smtp.gmail.com'; // กำหนดค่าเป็นที่ gmail ได้เลยครับ
+           $mail->Port = 465; // กำหนด port เป็น 465 ตามที่ google บอกครับ
+           $mail->SMTPAuth = true; // กำหนดให้มีการตรวจสอบสิทธิ์การใช้งาน
+           $mail->Username = 'lljobzll@gmail.com'; // ต้องมีเมล์ของ gmail ที่สมัครไว้ด้วยนะครับ
+           $mail->Password = '12345pongsakons'; // ใส่ password ที่เราจะใช้เข้าไปเช็คเมล์ที่ gmail ล่ะครับ
+           $mail->From = 'name'; // ใครเป็นผู้ส่ง ใส่ชื่อเราหรือชื่ออะไรก็ได้ครับ เพื่อให้คนรับเค้ารู้ว่าใครส่งมา
+           $mail->FromName = 'name1'; // ชื่อผู้ส่ง คล้ายกับตัวบนนั้นแหละครับ
+           $mail->Subject  = "subject"; // กำหนดชื่อเรื่องครับ
+           $mail->Body     =  'phpmailer by gmail'; // ใส่ข้อความที่ต้องการส่งเข้าไปครับ
+           $mail->AltBody =  $message_body;
+           $mail->AddAddress('admin@tantawancorp.co.th'); // เมลล์ของคนที่เราจะส่งไปให้ครับ
+           $mail->Send();
+        }
+        catch (phpmailerException $e) {
+            echo $e->errorMessage(); //Pretty error messages from PHPMailer
+        }
+        catch (Exception $e) {
+            echo $e->getMessage(); //Boring error messages from anything else!
+        }
+?>
+<a href="mailto:youremailaddress">Email Me</a>
+Thank you for contacting us. We will be in touch with you very soon.
