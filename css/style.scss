@@ -1,0 +1,23 @@
+@import 'mixin';
+//common
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-size: $font-16;
+  color: $grey-color;
+  height: 100%;
+}
+
+//Welcome-page
+.wrapper-welcome-page {
+  background: url("../image/bg-welcome-page.jpg") center top no-repeat $black;
+  background-size: 100%;
+  .king9-frame {
+    padding: 70px 0 20px 0;
+  }
+}
