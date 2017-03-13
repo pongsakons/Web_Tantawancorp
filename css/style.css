@@ -10,6 +10,9 @@ body {
   padding-top: 80px;
   height: 100%; }
 
+a:focus, a:hover {
+  color: #0088cc; }
+
 .wrapper-welcome-page {
   background: url("../image/bg-welcome-page.jpg") center top no-repeat #222222;
   padding-top: 0;
@@ -18,6 +21,7 @@ body {
     padding: 70px 0 20px 0; }
 
 .gradient-banner {
+  min-height: 37.5%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006ca2+0,0088cc+100 */
   background: #006ca2;
   /* Old browsers */
@@ -37,6 +41,36 @@ body {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006ca2', endColorstr='#0088cc', GradientType=0);
   /* IE6-8 */ }
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding: 30px 30px 30px 0; }
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #636363;
+    outline: transparent; }
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #0088cc; }
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  color: #0088cc;
+  background-color: transparent; }
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: -20px; }
+
+.dropdown-menu {
+  border-color: transparent;
+  padding: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -ms-o-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2); }
 
 .slide-banner .image-banner {
   position: relative; }

@@ -14,6 +14,12 @@ body {
   height: 100%;
 }
 
+a {
+  &:focus, &:hover {
+    color: $primary-color;
+  }
+}
+
 //Welcome-page
 .wrapper-welcome-page {
   background: url("../image/bg-welcome-page.jpg") center top no-repeat $black;
@@ -25,6 +31,7 @@ body {
 }
 
 .gradient-banner {
+  min-height: 360/960*100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006ca2+0,0088cc+100 */
   background: #006ca2; /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -38,6 +45,39 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006ca2', endColorstr='#0088cc', GradientType=0); /* IE6-8 */
 }
 
+//Navbar
+.navbar-default {
+  .navbar-nav {
+    & > li > a {
+      font-size: 18px;
+      font-size: $font-18;
+      padding: 30px 30px 30px 0;
+      &:focus {
+        color: $grey-color;
+        outline: transparent;
+      }
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    & > .open > a, & > .open > a:focus, > .open > a:hover {
+      color: $primary-color;
+      background-color: transparent;
+    }
+  }
+}
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: -20px;
+}
+
+.dropdown-menu {
+  border-color: transparent;
+  padding: 0;
+  @include border-radius(5px);
+  @include box-shadow(0 10px 12px rgba(0, 0, 0, 0.20));
+}
+
 .slide-banner {
   .image-banner {
     position: relative;
@@ -47,11 +87,12 @@ body {
     }
   }
 }
-.footer{
-  .footer-contact-list{
-   li{
-     float: left;
-     margin-right: 50px;
-   }
+
+.footer {
+  .footer-contact-list {
+    li {
+      float: left;
+      margin-right: 50px;
+    }
   }
 }
