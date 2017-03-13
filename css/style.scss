@@ -10,12 +10,14 @@ body {
   font-size: 16px;
   font-size: $font-16;
   color: $grey-color;
+  padding-top: 80px;
   height: 100%;
 }
 
 //Welcome-page
 .wrapper-welcome-page {
   background: url("../image/bg-welcome-page.jpg") center top no-repeat $black;
+  padding-top: 0;
   background-size: 100%;
   .king9-frame {
     padding: 70px 0 20px 0;

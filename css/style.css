@@ -7,10 +7,12 @@ body {
   font-size: 16px;
   font-size: 1rem;
   color: #636363;
+  padding-top: 80px;
   height: 100%; }
 
 .wrapper-welcome-page {
   background: url("../image/bg-welcome-page.jpg") center top no-repeat #222222;
+  padding-top: 0;
   background-size: 100%; }
   .wrapper-welcome-page .king9-frame {
     padding: 70px 0 20px 0; }
