@@ -13,6 +13,10 @@ body {
 a:focus, a:hover {
   color: #0088cc; }
 
+ol, ul {
+  margin-bottom: 0;
+  padding-left: 0; }
+
 .wrapper-welcome-page {
   background: url("../image/bg-welcome-page.jpg") center top no-repeat #222222;
   padding-top: 0;
@@ -21,7 +25,8 @@ a:focus, a:hover {
     padding: 70px 0 20px 0; }
 
 .gradient-banner {
-  min-height: 37.5%;
+  padding-top: 50px;
+  padding-bottom: 80px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006ca2+0,0088cc+100 */
   background: #006ca2;
   /* Old browsers */
@@ -72,14 +77,45 @@ a:focus, a:hover {
   -o-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2); }
 
+.slide-banner .text-banner {
+  color: #ffffff; }
+  .slide-banner .text-banner h1 {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px; }
+  .slide-banner .text-banner .title-line {
+    background-color: #ffffff;
+    height: 2px;
+    margin-bottom: 30px; }
+  .slide-banner .text-banner .sub-title {
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-size: 1.375rem; }
 .slide-banner .image-banner {
   position: relative; }
   .slide-banner .image-banner .oil-rig {
     position: absolute;
     bottom: 0; }
 
-.footer .footer-contact-list li {
-  float: left;
-  margin-right: 50px; }
+.footer {
+  background-color: #0088cc;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #ffffff; }
+  .footer span {
+    padding: 15px 0;
+    display: block; }
+    .footer span i.fa {
+      margin-right: 5px; }
+  .footer .footer-contact-list {
+    list-style: none; }
+    .footer .footer-contact-list li {
+      float: left;
+      margin-right: 50px; }
+
+/* pull-right on all except xs devices */
+@media (min-width: 1200px) {
+  .pull-right-lg {
+    float: right; } }
 
 /*# sourceMappingURL=style.css.map */

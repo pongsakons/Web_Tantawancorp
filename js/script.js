@@ -13,7 +13,9 @@ $(document).ready(function () {
     $(".owl-carousel").owlCarousel(
         {
             loop: true,
-            singleItem: true
+            singleItem: true,
+            pagination: false,
+            navigation: true,
         }
     );
 });

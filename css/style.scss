@@ -20,6 +20,11 @@ a {
   }
 }
 
+ol, ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 //Welcome-page
 .wrapper-welcome-page {
   background: url("../image/bg-welcome-page.jpg") center top no-repeat $black;
@@ -31,7 +36,8 @@ a {
 }
 
 .gradient-banner {
-  min-height: 360/960*100%;
+  padding-top: 50px;
+  padding-bottom: 80px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006ca2+0,0088cc+100 */
   background: #006ca2; /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -79,6 +85,24 @@ a {
 }
 
 .slide-banner {
+  .text-banner {
+    color: $white;
+    h1 {
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    .title-line {
+      background-color: $white;
+      height: 2px;
+      margin-bottom: 30px;
+    }
+    .sub-title {
+      margin-bottom: 50px;
+      font-size: 22px;
+      font-size: $font-22;
+    }
+  }
   .image-banner {
     position: relative;
     .oil-rig {
@@ -89,10 +113,28 @@ a {
 }
 
 .footer {
+  background-color: $primary-color;
+  font-size: 14px;
+  font-size: $font-14;
+  color: $white;
+  span {
+    padding: 15px 0;
+    display: block;
+    & i.fa {
+      margin-right: 5px;
+    }
+  }
   .footer-contact-list {
+    list-style: none;
     li {
       float: left;
       margin-right: 50px;
     }
+  }
+}
+/* pull-right on all except xs devices */
+@media (min-width: 1200px) {
+  .pull-right-lg {
+    float: right;
   }
 }
