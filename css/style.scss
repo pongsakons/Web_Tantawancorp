@@ -39,12 +39,19 @@ body {
 }
 
 .slide-banner {
-  .img-banner {
+  .image-banner {
     position: relative;
     .oil-rig {
       position: absolute;
-      right: 0;
       bottom: 0;
     }
+  }
+}
+.footer{
+  .footer-contact-list{
+   li{
+     float: left;
+     margin-right: 50px;
+   }
   }
 }

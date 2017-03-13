@@ -38,11 +38,14 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006ca2', endColorstr='#0088cc', GradientType=0);
   /* IE6-8 */ }
 
-.slide-banner .img-banner {
+.slide-banner .image-banner {
   position: relative; }
-  .slide-banner .img-banner .oil-rig {
+  .slide-banner .image-banner .oil-rig {
     position: absolute;
-    right: 0;
     bottom: 0; }
+
+.footer .footer-contact-list li {
+  float: left;
+  margin-right: 50px; }
 
 /*# sourceMappingURL=style.css.map */
