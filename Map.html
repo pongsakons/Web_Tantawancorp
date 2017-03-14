@@ -4,23 +4,36 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <title>Google Maps Multiple Markers</title>
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjgXYbVxuMX9CRNnH0j_qhokgNFSkbmYU&sensor=FALSE"></script>
-    <!--  -->
 </head>
 
-<body onload="onLoadMap(6,2)">
-    <div id="map" style="width: 700px; height: 700px;"></div>
-    <button onclick="onLoadMap(5,2)">dl1</button>
-    <button onclick="onLoadMap(7,2)">dl2</button>
-    <button onclick="onLoadMap(7,1)">dl3</button>
-    <button onclick="onLoadMap(7,0)">dl4</button>
+<body onload="onLoadMap(6,3)">
+    <div class="col-sm-6" id="map" style="width: 650px; height: 650px;"></div>
+    <div class="col-sm-6">
+
+        <h2> Address : </h2>
+      <!-- <div class="list-group">
+            <a href="#" onmouseover="onLoadMap(6,2)" class="list-group-item">First item</a>
+            <a href="#" class="list-group-item">Second item</a>
+            <a href="#" class="list-group-item">Third item</a>
+        </div> -->
+        <h4 onmouseover="onLoadMap(6,2)">Head Quarter 699/316 Moo 6, Tai Ban Rd., Tombon Tai-Ban, Aumpher Muang Samutprakarn, Samutprakarn 10280</h3>
+       <h4 onmouseover="onLoadMap(6,1)">Rayong Workshop : 21 Moo 3 Soi 5, Tombon Nikompattana, Aumpher Nikompattana, Rayong 21180</h3>
+       <h4 onmouseover="onLoadMap(6,0)">Songkhla Workshop : 613/13 Moo 2, Tombon Phawong, Sonkhla-jana Rd., Aumpher Muang Songkhla, 90100</h3>
+        <!-- <button onclick="onLoadMap(6,3)">dl1</button>
+        <button onclick="onLoadMap(6,2)">dl2</button>
+        <button onclick="onLoadMap(6,1)">dl3</button>
+        <button onclick="onLoadMap(6,0)">dl4</button> -->
+    </div>
     <script type="text/javascript">
         var onLoadMap = function(varzoom, varloc) {
             var locations = [
                 ['Songkhla Workshop', 7.1278896, 100.5852306, 3],
                 ['Rayong Workshop', 12.8301992, 101.1403038, 2],
-                ['Samutprakarn Office', 13.5621043, 100.5880416, 1]
+                ['Samutprakarn Office', 13.5621043, 100.5880416, 1],
+                ['', 13.5621043, 100.5880416, 0]
             ];
 
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -29,21 +42,28 @@
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             });
 
+            if (varloc != 3) {
+                var coordInfoWindow = new google.maps.InfoWindow();
+                coordInfoWindow.setContent(locations[varloc][0]);
+                coordInfoWindow.setPosition(new google.maps.LatLng(locations[varloc][1], locations[varloc][2]));
+                coordInfoWindow.open(map);
+            } else {
+                for (i = 0; i < locations.length - 1; i++) {
+                    var coordInfoWindow = new google.maps.InfoWindow();
+                    coordInfoWindow.setContent(locations[i][0]);
+                    coordInfoWindow.setPosition(new google.maps.LatLng(locations[i][1], locations[i][2]));
+                    coordInfoWindow.open(map);
+                }
+            }
             var infowindow = new google.maps.InfoWindow();
 
             var marker, i;
 
-            for (i = 0; i < locations.length; i++) {
+            for (i = 0; i < locations.length - 1; i++) {
                 marker = new google.maps.Marker({
                     position: new google.maps.LatLng(locations[i][1], locations[i][2]),
                     map: map,
                 });
-
-                //show title
-                // var coordInfoWindow = new google.maps.InfoWindow();
-                // coordInfoWindow.setContent(locations[i][0]);
-                // coordInfoWindow.setPosition(new google.maps.LatLng(locations[i][1], locations[i][2]));
-                // coordInfoWindow.open(map);
 
                 //1 show balloon
                 // google.maps.event.addListener(marker, 'click', (function(marker, i) {
@@ -55,7 +75,7 @@
                 //2 show and click
                 google.maps.event.addListener(marker, 'click', (function(marker, i) {
                     return function() {
-                        onLoadMap(7, i);
+                        onLoadMap(varzoom, i);
                     }
                 })(marker, i));
 
@@ -65,7 +85,6 @@
                         infowindow.open(map, marker); //
                     }
                 })(marker, i));
-
             }
         }
     </script>
