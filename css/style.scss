@@ -53,6 +53,7 @@ ol, ul {
 
 //Navbar
 .navbar-default {
+  background-color: $white;
   .navbar-nav {
     & > li > a {
       font-size: 18px;
@@ -82,6 +83,23 @@ ol, ul {
   padding: 0;
   @include border-radius(5px);
   @include box-shadow(0 10px 12px rgba(0, 0, 0, 0.20));
+  & > li {
+    padding: 0 20px 10px 20px;
+    &:first-child{
+      padding-top: 10px;
+    }
+    &:last-child a{
+      border-bottom: none;
+    }
+    & > a {
+      padding: 0 0 10px 0;
+      border-bottom: thin solid $light-grey;
+    }
+    & > a:focus, & > a:hover {
+      background-color: transparent;
+      color: $primary-color;
+    }
+  }
 }
 
 .slide-banner {
@@ -111,12 +129,14 @@ ol, ul {
     }
   }
 }
-.owl-theme .owl-controls{
+
+.owl-theme .owl-controls {
   margin-top: 0;
   position: absolute;
   top: 0;
 }
-#footer{
+
+#footer {
   background-color: $primary-color;
   font-size: 14px;
   font-size: $font-14;
@@ -136,6 +156,7 @@ ol, ul {
     }
   }
 }
+
 /* pull-right on all except xs devices */
 @media (min-width: 1200px) {
   .pull-right-lg {

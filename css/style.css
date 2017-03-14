@@ -47,18 +47,20 @@ ol, ul {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006ca2', endColorstr='#0088cc', GradientType=0);
   /* IE6-8 */ }
 
-.navbar-default .navbar-nav > li > a {
-  font-size: 18px;
-  font-size: 1.125rem;
-  padding: 30px 30px 30px 0; }
-  .navbar-default .navbar-nav > li > a:focus {
-    color: #636363;
-    outline: transparent; }
-  .navbar-default .navbar-nav > li > a:hover {
-    color: #0088cc; }
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
-  color: #0088cc;
-  background-color: transparent; }
+.navbar-default {
+  background-color: #ffffff; }
+  .navbar-default .navbar-nav > li > a {
+    font-size: 18px;
+    font-size: 1.125rem;
+    padding: 30px 30px 30px 0; }
+    .navbar-default .navbar-nav > li > a:focus {
+      color: #636363;
+      outline: transparent; }
+    .navbar-default .navbar-nav > li > a:hover {
+      color: #0088cc; }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color: #0088cc;
+    background-color: transparent; }
 
 .navbar-nav > li > .dropdown-menu {
   margin-top: -20px; }
@@ -76,6 +78,18 @@ ol, ul {
   -ms-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2); }
+  .dropdown-menu > li {
+    padding: 0 20px 10px 20px; }
+    .dropdown-menu > li:first-child {
+      padding-top: 10px; }
+    .dropdown-menu > li:last-child a {
+      border-bottom: none; }
+    .dropdown-menu > li > a {
+      padding: 0 0 10px 0;
+      border-bottom: thin solid #eeeeee; }
+    .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+      background-color: transparent;
+      color: #0088cc; }
 
 .slide-banner .text-banner {
   color: #ffffff; }
