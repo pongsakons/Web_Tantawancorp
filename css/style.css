@@ -102,19 +102,19 @@ ol, ul {
   position: absolute;
   top: 0; }
 
-#footerfooter {
+#footer {
   background-color: #0088cc;
   font-size: 14px;
   font-size: 0.875rem;
   color: #ffffff; }
-  #footerfooter span {
+  #footer span {
     padding: 15px 0;
     display: block; }
-    #footerfooter span i.fa {
+    #footer span i.fa {
       margin-right: 5px; }
-  #footerfooter .footer-contact-list {
+  #footer .footer-contact-list {
     list-style: none; }
-    #footerfooter .footer-contact-list li {
+    #footer .footer-contact-list li {
       float: left;
       margin-right: 50px; }
 

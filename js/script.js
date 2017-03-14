@@ -4,14 +4,13 @@
 
 $(document).ready(function () {
     // Function create
-    function loadPage() {
+    function loadContentPage() {
         $("#div1").load("Map.html");
         $("#script").load("script.html");
         $("#footer").load("footer.html");
-        console.log("work")
     }
 
-    loadPage();
+    loadContentPage();
     $(".owl-carousel").owlCarousel(
         {
             loop: true,
