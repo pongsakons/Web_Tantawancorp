@@ -21,25 +21,29 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
     <![endif]-->
+
 </head>
 <body>
 <div class="wrapper">
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <div class="navbar-header">
+            <div class="navbar-header col-lg-1">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <div class="col-lg-1">
-                    <a class="navbar-brand" href="#">
-                        <img src="image/logo.png" alt="">
-                    </a>
-                </div>
+                <a class="navbar-brand" href="#">
+                    <img src="image/logo.png" class="center-block" alt="">
+                </a>
             </div>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse col-lg-12">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a href="#" data-toggle="dropdown">About Us <i class="fa fa-angle-down"></i></a>
@@ -68,38 +72,82 @@
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
-    </div>
+    </div><!--End navbar-->
     <div class="owl-carousel">
-        <div>
+        <div class="slide-banner">
             <div class="container-fluid">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="text-banner">
-                        <h1>ABOUT US: Company Information</h1>
-                        <div class="title-line"></div>
-                        <div class="sub-title">
-                            <p><b>TANTAWAN CONSTRUCTION AND SERVICE CO., LTD (TCS)</b></p>
-                            <p>heads a group of companies established in 2004 providing the service</p>
+                <div class="row">
+                    <div class="gradient-banner clearfix">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <div class="text-banner">
+                                <h1>ABOUT US: Company Information</h1>
+                                <div class="title-line"></div>
+                                <div class="sub-title">
+                                    <p><b>TANTAWAN CONSTRUCTION AND SERVICE CO., LTD (TCS)</b></p>
+                                    <p>heads a group of companies established in 2004 providing the service</p>
+                                </div>
+                                <button class="btn btn-default btn-lg">Read More <i class="fa fa-angle-right"></i>
+                                </button>
+                            </div>
                         </div>
-                        <button>Read More <i class="fa fa-angle-right"></i></button>
+                    </div>
+                    <div class="image-banner">
+                        <img src="image/oil-rig.png"
+                             class="img-responsive oil-rig col-lg-8 col-lg-offset-3 col-md-8 col-md-offset-3 col-sm-8 col-sm-offset-3 col-xs-8 col-xs-offset-3"
+                             alt="">
+                        <img src="image/bg-slide1.jpg" class="img-responsive" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div>
+        <div class="slide-banner">
             <div class="container-fluid">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="text-banner">
-                       <h1>ABOUT US: Company Information</h1>
-                        <div class="title-line"></div>
-                        <div class="sub-title">
-                            <p><b>TANTAWAN CONSTRUCTION AND SERVICE CO., LTD (TCS)</b></p>
-                            <p>heads a group of companies established in 2004 providing the service</p>
+                <div class="row">
+                    <div class="gradient-banner clearfix">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <div class="text-banner">
+                                <h1>HSE: Occupational Health & Safety Management System</h1>
+                                <div class="title-line"></div>
+                                <div class="sub-title">
+                                    <p>We executed the works and services under OHSAS 18001 Occupational <br>
+                                        Health & Safety Management System covered Rayong and Songkhla Factory</p>
+                                </div>
+                                <button class="btn btn-default btn-lg">Read More <i class="fa fa-angle-right"></i>
+                                </button>
+                            </div>
                         </div>
-                        <button>Read More <i class="fa fa-angle-right"></i></button>
+                    </div>
+                    <div class="image-banner">
+                        <img src="image/bg-slide2.jpg" class="img-responsive" alt="">
                     </div>
                 </div>
             </div>
         </div>
+        <div class="slide-banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="gradient-banner clearfix">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <div class="text-banner">
+                                <h1>Quality Management System</h1>
+                                <div class="title-line"></div>
+                                <div class="sub-title">
+                                    <p>We executed the works and services under ISO 9001 Quality <br>
+                                        Management System covered Rayong and Songkhla Factory</p>
+                                </div>
+                                <button class="btn btn-default btn-lg">Read More <i class="fa fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-banner">
+                        <img src="image/bg-slide3.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--End owl-carousel-->
+    <div id="footer" class="clearfix">
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

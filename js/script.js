@@ -4,18 +4,19 @@
 
 $(document).ready(function () {
     // Function create
-    function loadPage() {
+    function loadContentPage() {
         $("#div1").load("Map.html");
         $("#script").load("script.html");
+        $("#footer").load("footer.html");
     }
 
-    loadPage();
+    loadContentPage();
     $(".owl-carousel").owlCarousel(
         {
             loop: true,
-            margin: 10,
-            nav: true,
-            singleItem: true
+            singleItem: true,
+            pagination: false,
+            navigation: true,
         }
     );
 });

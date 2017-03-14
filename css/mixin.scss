@@ -3,6 +3,7 @@ $primary-color: #0088cc;
 $secondary-color: #0088cc;
 //Support color
 $black:#222222;
+$white:#ffffff;
 $grey-color: #636363;
 $medium-grey: #999999;
 $light-grey: #eeeeee;
@@ -15,3 +16,17 @@ $font-18:1.125rem;
 $font-16:1rem;
 $font-14:0.875rem;
 $font-12:0.75rem;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -ms-o-radius: $radius;
+  border-radius: $radius;
+}
+@mixin box-shadow($boxShadow) {
+  -webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  -ms-box-shadow: $boxShadow;
+  -o-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
+}
