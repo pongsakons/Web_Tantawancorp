@@ -97,19 +97,24 @@ ol, ul {
     position: absolute;
     bottom: 0; }
 
-.footer {
+.owl-theme .owl-controls {
+  margin-top: 0;
+  position: absolute;
+  top: 0; }
+
+#footerfooter {
   background-color: #0088cc;
   font-size: 14px;
   font-size: 0.875rem;
   color: #ffffff; }
-  .footer span {
+  #footerfooter span {
     padding: 15px 0;
     display: block; }
-    .footer span i.fa {
+    #footerfooter span i.fa {
       margin-right: 5px; }
-  .footer .footer-contact-list {
+  #footerfooter .footer-contact-list {
     list-style: none; }
-    .footer .footer-contact-list li {
+    #footerfooter .footer-contact-list li {
       float: left;
       margin-right: 50px; }
 

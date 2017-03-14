@@ -7,6 +7,8 @@ $(document).ready(function () {
     function loadPage() {
         $("#div1").load("Map.html");
         $("#script").load("script.html");
+        $("#footer").load("footer.html");
+        console.log("work")
     }
 
     loadPage();
