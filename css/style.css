@@ -17,6 +17,22 @@ ol, ul {
   margin-bottom: 0;
   padding-left: 0; }
 
+.btn-default {
+  background-color: transparent;
+  color: #fff; }
+  .btn-default:hover {
+    background-color: #ffffff;
+    color: #0088cc;
+    border-color: #ffffff; }
+
+.btn {
+  border: 2px solid #ffffff;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -ms-o-radius: 50px;
+  border-radius: 50px; }
+
 .wrapper-welcome-page {
   background: url("../image/bg-welcome-page.jpg") center top no-repeat #222222;
   padding-top: 0;
@@ -125,10 +141,14 @@ ol, ul {
     font-size: 22px;
     font-size: 1.375rem; }
 .slide-banner .image-banner {
-  position: relative; }
+  position: relative;
+  height: 54.62963%; }
   .slide-banner .image-banner .oil-rig {
     position: absolute;
     bottom: 0; }
+
+.owl-carousel {
+  background-color: #0088cc; }
 
 .owl-theme .owl-controls {
   margin-top: 0;
