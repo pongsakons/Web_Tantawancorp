@@ -1,21 +1,24 @@
 /**
  * Created by Jo-NOTEBOOK on 3/12/2017.
  */
-
+function loadContentPage() {
+    $("#div1").load("Map.html");
+    $("#script").load("script.html");
+    $("#footer").load("footer.html");
+    $("#navBar").load("navbar.html");
+}
+loadContentPage();
 $(document).ready(function () {
     // Function create
-    function loadContentPage() {
-        $("#div1").load("Map.html");
-        $("#script").load("script.html");
-        $("#footer").load("footer.html");
-    }
-    function hamburgerToggle(){
+    function hamburgerToggle() {
         $(".navbar-toggle").on("click", function () {
             $(this).toggleClass("active");
         });
     }
+
     hamburgerToggle();
-    loadContentPage();
+
+    //Call slider
     $(".owl-carousel").owlCarousel(
         {
             loop: true,
@@ -26,11 +29,11 @@ $(document).ready(function () {
                 "<i class='fa fa-angle-left'></i>",
                 "<i class='fa fa-angle-right'></i>"
             ],
-            autoHeight : true,
-            autoPlay:true,
+            autoHeight: true,
+            //autoPlay:true,
             slideSpeed: 1000
         },
-        $(function(){
+        $(function () {
             var owlCarousel = $(".owl-carousel .owl-controls");
             owlCarousel.addClass("col-lg-10 col-lg-offset-1 visible-lg-block");
         })

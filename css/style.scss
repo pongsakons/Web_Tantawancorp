@@ -100,22 +100,14 @@ ol, ul {
   }
 }
 
+//Hamburger Icon
 .navbar-toggle {
+  margin: 27px auto;
   background: transparent;
   padding: 0;
   border: none;
   .icon-bar {
     background-color: $grey-color;
-  }
-  &:focus, &.navbar-toggle:hover {
-    background-color: transparent !important;
-  }
-}
-
-//Hamburger Icon
-.navbar-toggle {
-  margin: 27px auto;
-  .icon-bar {
     width: 40px;
     height: 6px;
     @include border-radius(20px)
@@ -144,6 +136,9 @@ ol, ul {
   &.active .icon-bar:nth-of-type(3) {
     top: -9px;
     transform: rotate(-45deg);
+  }
+  &:focus, &.navbar-toggle:hover {
+    background-color: transparent !important;
   }
 }
 
