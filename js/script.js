@@ -27,7 +27,7 @@ $(document).ready(function () {
         },
         $(function(){
             var owlCarousel = $(".owl-carousel .owl-controls");
-            owlCarousel.addClass("col-lg-10 col-lg-offset-1");
+            owlCarousel.addClass("col-lg-10 col-lg-offset-1 visible-lg-block");
         })
     );
 });

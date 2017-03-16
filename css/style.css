@@ -20,10 +20,10 @@ ol, ul {
 .btn-default {
   background-color: transparent;
   color: #fff; }
-  .btn-default:hover {
-    background-color: #ffffff;
-    color: #0088cc;
-    border-color: #ffffff; }
+  .btn-default:hover, .btn-default.focus, .btn-default:focus, .btn-default.active, .btn-default:active {
+    background-color: #ffffff !important;
+    color: #0088cc !important;
+    border-color: #ffffff !important; }
 
 .btn {
   border: 2px solid #ffffff;
@@ -40,9 +40,13 @@ ol, ul {
   .wrapper-welcome-page .king9-frame {
     padding: 70px 0 20px 0; }
 
+.wrapper {
+  height: 100%;
+  background-color: #0088cc; }
+
 .gradient-banner {
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006ca2+0,0088cc+100 */
   background: #006ca2;
   /* Old browsers */
@@ -65,6 +69,10 @@ ol, ul {
 
 .navbar-default {
   background-color: #ffffff; }
+  .navbar-default .navbar-header {
+    min-height: 80px; }
+  .navbar-default .navbar-brand {
+    padding-top: 10px; }
   .navbar-default .navbar-nav > li > a {
     font-size: 18px;
     font-size: 1.125rem;
@@ -77,23 +85,26 @@ ol, ul {
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
     color: #0088cc;
     background-color: transparent; }
-  .navbar-default .navbar-toggle {
-    background: transparent;
-    padding: 0;
-    border: none; }
-    .navbar-default .navbar-toggle .icon-bar {
-      background-color: #636363; }
-    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle.navbar-toggle:hover {
-      background-color: transparent; }
 
-.navbar-toggle .icon-bar {
-  width: 40px;
-  height: 6px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -ms-o-radius: 20px;
-  border-radius: 20px; }
+.navbar-toggle {
+  background: transparent;
+  padding: 0;
+  border: none; }
+  .navbar-toggle .icon-bar {
+    background-color: #636363; }
+  .navbar-toggle:focus, .navbar-toggle.navbar-toggle:hover {
+    background-color: transparent; }
+
+.navbar-toggle {
+  margin: 27px auto; }
+  .navbar-toggle .icon-bar {
+    width: 40px;
+    height: 6px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -ms-o-radius: 20px;
+    border-radius: 20px; }
 
 .navbar-nav > li > .dropdown-menu {
   margin-top: -20px; }
@@ -131,13 +142,13 @@ ol, ul {
   .slide-banner .text-banner h1 {
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
   .slide-banner .text-banner .title-line {
     background-color: #ffffff;
     height: 2px;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
   .slide-banner .text-banner .sub-title {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 22px;
     font-size: 1.375rem; }
 .slide-banner .image-banner {
@@ -164,6 +175,9 @@ ol, ul {
       text-align: center;
       padding: 0;
       line-height: 0; }
+      .owl-carousel.owl-theme .owl-controls .owl-buttons div:hover {
+        background-color: #ffffff;
+        color: #0088cc; }
       .owl-carousel.owl-theme .owl-controls .owl-buttons div:first-child {
         margin-right: 20px; }
 
@@ -186,14 +200,26 @@ ol, ul {
 /* pull-right on all except xs devices */
 @media (min-width: 1200px) {
   .pull-right-lg {
-    float: right; } }
+    float: right; }
+
+  .gradient-banner {
+    height: 360px; } }
 @media (max-width: 992px) {
   .navbar-default .navbar-nav > li > a {
     font-size: 16px;
-    font-size: 1rem; }
+    font-size: 1rem;
+    padding: 10px 15px; }
 
   .dropdown-menu {
     font-size: 14px;
     font-size: 0.875rem; } }
+@media (max-width: 768px) {
+  .dropdown-menu > li > a {
+    white-space: normal; }
+
+  .dropdown-menu > li {
+    padding: 0 15px; }
+    .dropdown-menu > li:first-child {
+      padding: 0 15px; } }
 
 /*# sourceMappingURL=style.css.map */
