@@ -9,9 +9,13 @@ $(document).ready(function () {
         $("#script").load("script.html");
         $("#footer").load("footer.html");
     }
-
+    function hamburgerToggle(){
+        $(".navbar-toggle").on("click", function () {
+            $(this).toggleClass("active");
+        });
+    }
+    hamburgerToggle();
     loadContentPage();
-
     $(".owl-carousel").owlCarousel(
         {
             loop: true,
@@ -31,6 +35,7 @@ $(document).ready(function () {
             owlCarousel.addClass("col-lg-10 col-lg-offset-1 visible-lg-block");
         })
     );
+
 });
 
 

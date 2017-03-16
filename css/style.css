@@ -105,6 +105,20 @@ ol, ul {
     -ms-border-radius: 20px;
     -ms-o-radius: 20px;
     border-radius: 20px; }
+  .navbar-toggle .icon-bar:nth-of-type(2) {
+    top: 1px; }
+  .navbar-toggle .icon-bar:nth-of-type(3) {
+    top: 2px; }
+  .navbar-toggle .icon-bar {
+    position: relative; }
+  .navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 11px;
+    transform: rotate(45deg); }
+  .navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent; }
+  .navbar-toggle.active .icon-bar:nth-of-type(3) {
+    top: -9px;
+    transform: rotate(-45deg); }
 
 .navbar-nav > li > .dropdown-menu {
   margin-top: -20px; }

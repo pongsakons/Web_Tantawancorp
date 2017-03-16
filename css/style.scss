@@ -120,6 +120,32 @@ ol, ul {
     height: 6px;
     @include border-radius(20px)
   }
+  .icon-bar:nth-of-type(2) {
+    top: 1px;
+  }
+
+  .icon-bar:nth-of-type(3) {
+    top: 2px;
+  }
+
+  .icon-bar {
+    position: relative;
+    //transition: all 500ms ease-in-out;
+  }
+
+  &.active .icon-bar:nth-of-type(1) {
+    top: 11px;
+    transform: rotate(45deg);
+  }
+
+  &.active .icon-bar:nth-of-type(2) {
+    background-color: transparent;
+  }
+
+  &.active .icon-bar:nth-of-type(3) {
+    top: -9px;
+    transform: rotate(-45deg);
+  }
 }
 
 .navbar-nav > li > .dropdown-menu {
