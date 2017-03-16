@@ -149,11 +149,23 @@ ol, ul {
 
 .owl-carousel {
   background-color: #0088cc; }
-
-.owl-theme .owl-controls {
-  margin-top: 0;
-  position: absolute;
-  top: 0; }
+  .owl-carousel.owl-theme .owl-controls {
+    text-align: right;
+    position: absolute;
+    top: 0; }
+    .owl-carousel.owl-theme .owl-controls .owl-buttons div {
+      width: 48px;
+      height: 48px;
+      font-size: 42px;
+      font-size: 2.625rem;
+      background-color: transparent;
+      border: 2px solid #ffffff;
+      opacity: 1;
+      text-align: center;
+      padding: 0;
+      line-height: 0; }
+      .owl-carousel.owl-theme .owl-controls .owl-buttons div:first-child {
+        margin-right: 20px; }
 
 #footer {
   background-color: #0088cc;

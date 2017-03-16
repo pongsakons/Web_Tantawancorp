@@ -24,19 +24,22 @@ ol, ul {
   margin-bottom: 0;
   padding-left: 0;
 }
-.btn-default{
+
+.btn-default {
   background-color: transparent;
-  color:#fff;
-  &:hover{
+  color: #fff;
+  &:hover {
     background-color: $white;
-    color:$primary-color;
+    color: $primary-color;
     border-color: $white;
   }
 }
-.btn{
+
+.btn {
   border: 2px solid $white;
   @include border-radius(50px);
 }
+
 //Welcome-page
 .wrapper-welcome-page {
   background: url("../image/bg-welcome-page.jpg") center top no-repeat $black;
@@ -164,13 +167,29 @@ ol, ul {
     }
   }
 }
-.owl-carousel{
+
+.owl-carousel {
   background-color: $primary-color;
-}
-.owl-theme .owl-controls {
-  margin-top: 0;
-  position: absolute;
-  top: 0;
+  &.owl-theme .owl-controls {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    .owl-buttons div {
+      width: 48px;
+      height: 48px;
+      font-size: 42px;
+      font-size: $font-42;
+      background-color: transparent;
+      border: 2px solid $white;
+      opacity: 1;
+      text-align: center;
+      padding: 0;
+      line-height: 0;
+      &:first-child{
+        margin-right: 20px;
+      }
+    }
+  }
 }
 
 #footer {

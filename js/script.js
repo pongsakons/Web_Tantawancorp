@@ -11,13 +11,24 @@ $(document).ready(function () {
     }
 
     loadContentPage();
+
     $(".owl-carousel").owlCarousel(
         {
             loop: true,
             singleItem: true,
             pagination: false,
             navigation: true,
-        }
+            navigationText: [
+                "<i class='fa fa-angle-left'></i>",
+                "<i class='fa fa-angle-right'></i>"
+            ],
+            autoPlay:true,
+            slideSpeed: 1000
+        },
+        $(function(){
+            var owlCarousel = $(".owl-carousel .owl-controls");
+            owlCarousel.addClass("col-lg-10 col-lg-offset-1");
+        })
     );
 });
 
