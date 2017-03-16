@@ -31,10 +31,3 @@ $font-12:0.75rem;
   -o-box-shadow: $boxShadow;
   box-shadow: $boxShadow;
 }
-@mixin box-shadow($boxShadow) {
-  -webkit-box-shadow: $boxShadow;
-  -moz-box-shadow: $boxShadow;
-  -ms-box-shadow: $boxShadow;
-  -o-box-shadow: $boxShadow;
-  box-shadow: $boxShadow;
-}
