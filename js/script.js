@@ -22,6 +22,7 @@ $(document).ready(function () {
                 "<i class='fa fa-angle-left'></i>",
                 "<i class='fa fa-angle-right'></i>"
             ],
+            autoHeight : true,
             autoPlay:true,
             slideSpeed: 1000
         },
