@@ -108,7 +108,7 @@ ol, ul {
     background-color: $grey-color;
   }
   &:focus, &.navbar-toggle:hover {
-    background-color: transparent;
+    background-color: transparent !important;
   }
 }
 
@@ -130,7 +130,6 @@ ol, ul {
 
   .icon-bar {
     position: relative;
-    //transition: all 500ms ease-in-out;
   }
 
   &.active .icon-bar:nth-of-type(1) {
