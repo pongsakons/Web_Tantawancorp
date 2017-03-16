@@ -244,7 +244,6 @@ ol, ul {
   .navbar-default .navbar-nav > li > a {
     font-size: 16px;
     font-size: $font-16;
-    padding: 10px 15px;
   }
   .dropdown-menu {
     font-size: 14px;
@@ -252,13 +251,17 @@ ol, ul {
   }
 }
 
-@media (max-width: 768px) {
-  .dropdown-menu > li > a {
-    white-space: normal;
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav > li > a {
+    padding: 10px 15px;
   }
   .dropdown-menu {
     & > li {
       padding: 0 15px;
+      & > a {
+        white-space: normal;
+        padding: 8px 10px !important;
+      }
       &:first-child {
         padding: 0 15px;
       }
