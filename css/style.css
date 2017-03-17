@@ -76,7 +76,8 @@ ol, ul {
   .navbar-default .navbar-nav > li > a {
     font-size: 18px;
     font-size: 1.125rem;
-    padding: 30px 30px 30px 0; }
+    padding: 30px 30px 30px 0;
+    text-transform: uppercase; }
     .navbar-default .navbar-nav > li > a:focus {
       color: #636363;
       outline: transparent; }

@@ -85,6 +85,7 @@ ol, ul {
       font-size: 18px;
       font-size: $font-18;
       padding: 30px 30px 30px 0;
+      text-transform: uppercase;
       &:focus {
         color: $grey-color;
         outline: transparent;
