@@ -219,10 +219,13 @@ a:focus, a:hover {
       float: left;
       margin-right: 20px; }
 
+.wrapper.subpage {
+  background-color: #ffffff; }
+
 #content {
-  padding-bottom: 20px;
-  background-color: #fff;
-  height: 100%; }
+  padding-bottom: 80px;
+  background-color: #ffffff;
+  min-height: 100%; }
 
 .breadcrumb {
   background-color: transparent;
@@ -231,6 +234,28 @@ a:focus, a:hover {
 
 .subpage-title {
   color: #006ca2; }
+
+.modal-dialog {
+  text-align: center;
+  width: auto;
+  max-width: 70%;
+  margin: 30px auto; }
+
+.modal-content {
+  display: inline-block; }
+
+.img-zoom {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .img-zoom:hover {
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
   html {

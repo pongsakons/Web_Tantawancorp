@@ -6,6 +6,7 @@ function loadContentPage() {
     $("#script").load("script.html");
     $("#footer").load("footer.html");
     $("#navBar").load("navbar.html");
+    $("#myModal").load("modal-img.html");
 }
 function hamburgerToggle() {
     $(".navbar-toggle").on("click", function () {
@@ -14,6 +15,13 @@ function hamburgerToggle() {
 }
 loadContentPage();
 $(document).ready(function () {
+    $('img').on('click', function () {
+        var image = $(this).attr('src');
+        //alert(image);
+        $('#myModal').on('show.bs.modal', function () {
+            $(".showimage").attr("src", image);
+        });
+    });
     hamburgerToggle();
     //Call slider
     $(".owl-carousel").owlCarousel(

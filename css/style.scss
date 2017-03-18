@@ -254,20 +254,44 @@ a {
 }
 
 //subpage
-#content{
-  padding-bottom: 20px;
-  background-color: #fff;
-  height: 100%;
+.wrapper.subpage {
+  background-color: $white;
 }
-.breadcrumb{
+
+#content {
+  padding-bottom: 80px;
+  background-color: $white;
+  min-height: 100%;
+}
+
+.breadcrumb {
   background-color: transparent;
   padding: 20px 0;
   margin-bottom: 0;
 }
-.subpage-title{
+
+.subpage-title {
   color: $primary-color;
 }
 
+.modal-dialog {
+  text-align: center;
+  width: auto;
+  max-width: 70%;
+  margin: 30px auto;
+}
+
+.modal-content {
+  display: inline-block;
+}
+
+.img-zoom {
+  cursor: pointer;
+  @include transition(all 0.5s ease);
+  &:hover {
+    @include box-shadow(0 10px 30px rgba(0, 0, 0, 0.25));
+  }
+}
 
 //Responsive part
 @media (min-width: 1200px) and (max-width: 1600px) {
