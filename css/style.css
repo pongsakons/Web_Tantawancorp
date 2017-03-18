@@ -77,8 +77,7 @@ ol, ul {
   .navbar-default .navbar-nav > li > a {
     font-size: 18px;
     font-size: 1.125rem;
-    padding: 30px 30px 30px 0;
-    text-transform: uppercase; }
+    padding: 30px 30px 30px 0; }
     .navbar-default .navbar-nav > li > a:focus {
       color: #636363;
       outline: transparent; }
@@ -224,6 +223,9 @@ ol, ul {
       margin-right: 20px; }
 
 /* pull-right on all except xs devices */
+@media (min-width: 1200px) and (max-width: 1600px) {
+  html {
+    font-size: 12px; } }
 @media (min-width: 1200px) {
   .owl-carousel {
     height: 100%; }

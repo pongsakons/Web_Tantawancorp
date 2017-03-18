@@ -7,17 +7,14 @@ function loadContentPage() {
     $("#footer").load("footer.html");
     $("#navBar").load("navbar.html");
 }
+function hamburgerToggle() {
+    $(".navbar-toggle").on("click", function () {
+        $(this).toggleClass("active");
+    });
+}
 loadContentPage();
 $(document).ready(function () {
-    // Function create
-    function hamburgerToggle() {
-        $(".navbar-toggle").on("click", function () {
-            $(this).toggleClass("active");
-        });
-    }
-
     hamburgerToggle();
-
     //Call slider
     $(".owl-carousel").owlCarousel(
         {
