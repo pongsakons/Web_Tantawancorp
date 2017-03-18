@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="489e39b1-483a-4178-aecc-77f12adf72e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css.map" afterPath="$PROJECT_DIR$/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.scss" afterPath="$PROJECT_DIR$/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index-main.html" afterPath="$PROJECT_DIR$/index-main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navbar.html" afterPath="$PROJECT_DIR$/navbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,14 +30,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+            <state relative-caret-position="545">
+              <caret line="58" column="72" lean-forward="false" selection-start-line="58" selection-start-column="72" selection-end-line="58" selection-end-column="72" />
               <folding>
-                <marker date="1489843184874" expanded="true" signature="1240:1309" ph="..." />
-                <marker date="1489843184874" expanded="true" signature="1260:1297" ph="{...}" />
+                <marker date="1489843857645" expanded="true" signature="1240:1309" ph="..." />
+                <marker date="1489843857645" expanded="true" signature="1260:1297" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -72,7 +66,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
@@ -191,8 +185,8 @@
         <option value="$PROJECT_DIR$/project.html" />
         <option value="$PROJECT_DIR$/navbar.html" />
         <option value="$PROJECT_DIR$/index-main.html" />
-        <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/css/style.scss" />
+        <option value="$PROJECT_DIR$/contact.html" />
       </list>
     </option>
   </component>
@@ -419,12 +413,12 @@
       <workItem from="1489705498550" duration="3006000" />
       <workItem from="1489711724503" duration="695000" />
       <workItem from="1489765013719" duration="1293000" />
-      <workItem from="1489799851003" duration="31480000" />
+      <workItem from="1489799851003" duration="32080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97153000" />
+    <option name="totallyTimeSpent" value="97753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -636,13 +630,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subpage.html" />
-    <entry file="file://$PROJECT_DIR$/Map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -795,17 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
-          <folding>
-            <marker date="1489843184874" expanded="true" signature="1240:1309" ph="..." />
-            <marker date="1489843184874" expanded="true" signature="1260:1297" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-business.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
@@ -813,6 +789,24 @@
           <folding>
             <marker date="1489835561421" expanded="true" signature="1240:1309" ph="..." />
             <marker date="1489835561421" expanded="true" signature="1260:1297" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="98" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="299" column="21" lean-forward="false" selection-start-line="299" selection-start-column="21" selection-end-line="299" selection-end-column="21" />
+          <folding>
+            <element signature="e#1458#2121#2" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -825,12 +819,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="299" column="21" lean-forward="false" selection-start-line="299" selection-start-column="21" selection-end-line="299" selection-end-column="21" />
+        <state relative-caret-position="545">
+          <caret line="58" column="72" lean-forward="false" selection-start-line="58" selection-start-column="72" selection-end-line="58" selection-end-column="72" />
           <folding>
-            <element signature="e#1458#2121#2" expanded="true" />
+            <marker date="1489843857645" expanded="true" signature="1240:1309" ph="..." />
+            <marker date="1489843857645" expanded="true" signature="1260:1297" ph="{...}" />
           </folding>
         </state>
       </provider>
