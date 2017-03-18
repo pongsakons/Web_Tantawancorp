@@ -57,8 +57,7 @@ ol, ul {
 }
 
 .gradient-banner {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 30px 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006ca2+0,0088cc+100 */
   background: #006ca2; /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -271,9 +270,7 @@ ol, ul {
       height: 100% !important;
     }
   }
-  .gradient-banner {
-    padding-bottom: 50px;
-  }
+
   #footer {
     position: fixed;
     width: 100%;

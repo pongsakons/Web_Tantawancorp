@@ -46,8 +46,7 @@ ol, ul {
   background-color: #006ca2; }
 
 .gradient-banner {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 30px 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006ca2+0,0088cc+100 */
   background: #006ca2;
   /* Old browsers */
@@ -231,9 +230,6 @@ ol, ul {
     height: 100%; }
     .owl-carousel .owl-wrapper-outer {
       height: 100% !important; }
-
-  .gradient-banner {
-    padding-bottom: 50px; }
 
   #footer {
     position: fixed;
