@@ -135,11 +135,11 @@ a:focus, a:hover {
   -ms-border-radius: 5px;
   -ms-o-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); }
   .dropdown-menu > li {
     padding: 0 20px 10px 20px; }
     .dropdown-menu > li:first-child {
@@ -256,16 +256,18 @@ a:focus, a:hover {
 .list-address {
   margin-bottom: 30px; }
   .list-address div {
-    border-bottom: thin solid #eee; }
+    border-bottom: thin solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 14px; }
     .list-address div:last-child {
       border: none; }
 
 .img-shadow {
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); }
 
 .img-zoom {
   cursor: pointer;
@@ -273,11 +275,11 @@ a:focus, a:hover {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); }
   .img-zoom:hover {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
