@@ -37,6 +37,7 @@ ol, ul {
 
 .btn {
   border: 2px solid $white;
+  font-size: $font-18;
   @include border-radius(50px);
 }
 
@@ -177,6 +178,7 @@ ol, ul {
   .text-banner {
     color: $white;
     h1 {
+      font-size: $font-36;
       font-weight: 700;
       margin-top: 0;
       margin-bottom: 20px;
@@ -209,16 +211,21 @@ ol, ul {
     position: absolute;
     top: 0;
     .owl-buttons div {
-      width: 48px;
-      height: 48px;
       font-size: 42px;
       font-size: $font-42;
+      text-align: center;
       background-color: transparent;
       border: 2px solid $white;
       opacity: 1;
-      text-align: center;
-      padding: 0;
-      line-height: 0;
+      padding: 1.5rem;
+      position: relative;
+      @include border-radius(50%);
+      .fa {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include transform(translate(-50%, -50%));
+      }
       &:hover {
         background-color: $white;
         color: $primary-color;
@@ -246,18 +253,29 @@ ol, ul {
     list-style: none;
     li {
       float: left;
-      margin-right: 50px;
+      margin-right: 20px;
     }
   }
 }
 
 /* pull-right on all except xs devices */
 @media (min-width: 1200px) {
-  .pull-right-lg {
-    float: right;
+  .owl-carousel {
+    height: 100%;
+    .owl-wrapper-outer {
+      height: 100% !important;
+    }
   }
   .gradient-banner {
-    height: 360px;
+    padding-bottom: 50px;
+  }
+  #footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  .pull-right-lg {
+    float: right;
   }
 }
 

@@ -1,5 +1,5 @@
 //Font size
-$primary-color: #0088cc;
+$primary-color: #006ca2;
 $secondary-color: #0088cc;
 //Support color
 $black:#222222;
@@ -30,4 +30,12 @@ $font-12:0.75rem;
   -ms-box-shadow: $boxShadow;
   -o-box-shadow: $boxShadow;
   box-shadow: $boxShadow;
+}
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -o-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+
 }
