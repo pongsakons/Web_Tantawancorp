@@ -75,7 +75,7 @@ ol, ul {
 .navbar-default {
   background-color: $white;
   .navbar-brand {
-    padding-top: 4px;
+    padding: 4px 0 0 0;
     img {
       width: 58px;
     }
@@ -102,7 +102,7 @@ ol, ul {
 
 //Hamburger Icon
 .navbar-toggle {
-  margin: 18px auto;
+  margin: 17px auto;
   background: transparent;
   padding: 0;
   border: none;
@@ -267,6 +267,9 @@ ol, ul {
   .slide-banner .image-banner .oil-rig{
     bottom: -20px;
   }
+  .navbar-default .navbar-header .navbar-brand{
+    margin-left: 0;
+  }
 }
 @media (min-width: 1200px) {
   .owl-carousel {
@@ -275,7 +278,7 @@ ol, ul {
       height: 100% !important;
     }
   }
-  .navbar-default .navbar-brand{
+  .navbar-default .navbar-header .navbar-brand{
     width: 100%;
   }
   #footer {

@@ -70,7 +70,7 @@ ol, ul {
 .navbar-default {
   background-color: #ffffff; }
   .navbar-default .navbar-brand {
-    padding-top: 4px; }
+    padding: 4px 0 0 0; }
     .navbar-default .navbar-brand img {
       width: 58px; }
   .navbar-default .navbar-nav > li > a {
@@ -87,7 +87,7 @@ ol, ul {
     background-color: transparent; }
 
 .navbar-toggle {
-  margin: 18px auto;
+  margin: 17px auto;
   background: transparent;
   padding: 0;
   border: none; }
@@ -227,14 +227,17 @@ ol, ul {
     font-size: 12px; } }
 @media (min-width: 1600px) {
   .slide-banner .image-banner .oil-rig {
-    bottom: -20px; } }
+    bottom: -20px; }
+
+  .navbar-default .navbar-header .navbar-brand {
+    margin-left: 0; } }
 @media (min-width: 1200px) {
   .owl-carousel {
     height: 100%; }
     .owl-carousel .owl-wrapper-outer {
       height: 100% !important; }
 
-  .navbar-default .navbar-brand {
+  .navbar-default .navbar-header .navbar-brand {
     width: 100%; }
 
   #footer {
