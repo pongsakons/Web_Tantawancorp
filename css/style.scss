@@ -20,11 +20,6 @@ a {
   }
 }
 
-ol, ul {
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
 .btn-default {
   background-color: transparent;
   color: #fff;
@@ -249,6 +244,8 @@ ol, ul {
   }
   .footer-contact-list {
     list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
     li {
       float: left;
       margin-right: 20px;
@@ -256,21 +253,38 @@ ol, ul {
   }
 }
 
-/* pull-right on all except xs devices */
+//subpage
+#content{
+  padding-bottom: 20px;
+  background-color: #fff;
+  height: 100%;
+}
+.breadcrumb{
+  background-color: transparent;
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+.subpage-title{
+  color: $primary-color;
+}
 
+
+//Responsive part
 @media (min-width: 1200px) and (max-width: 1600px) {
   html {
     font-size: 12px;
   }
 }
+
 @media (min-width: 1600px) {
-  .slide-banner .image-banner .oil-rig{
+  .slide-banner .image-banner .oil-rig {
     bottom: -20px;
   }
-  .navbar-default .navbar-header .navbar-brand{
+  .navbar-default .navbar-header .navbar-brand {
     margin-left: 0;
   }
 }
+
 @media (min-width: 1200px) {
   .owl-carousel {
     height: 100%;
@@ -278,7 +292,7 @@ ol, ul {
       height: 100% !important;
     }
   }
-  .navbar-default .navbar-header .navbar-brand{
+  .navbar-default .navbar-header .navbar-brand {
     width: 100%;
   }
   #footer {

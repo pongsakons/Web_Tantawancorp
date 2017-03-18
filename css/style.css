@@ -13,10 +13,6 @@ body {
 a:focus, a:hover {
   color: #006ca2; }
 
-ol, ul {
-  margin-bottom: 0;
-  padding-left: 0; }
-
 .btn-default {
   background-color: transparent;
   color: #fff; }
@@ -216,12 +212,26 @@ ol, ul {
     #footer span i.fa {
       margin-right: 5px; }
   #footer .footer-contact-list {
-    list-style: none; }
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0; }
     #footer .footer-contact-list li {
       float: left;
       margin-right: 20px; }
 
-/* pull-right on all except xs devices */
+#content {
+  padding-bottom: 20px;
+  background-color: #fff;
+  height: 100%; }
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 20px 0;
+  margin-bottom: 0; }
+
+.subpage-title {
+  color: #006ca2; }
+
 @media (min-width: 1200px) and (max-width: 1600px) {
   html {
     font-size: 12px; } }
