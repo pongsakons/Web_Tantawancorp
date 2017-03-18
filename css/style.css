@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: 14px;
   height: 100%; }
 
 body {
@@ -7,7 +7,7 @@ body {
   font-size: 16px;
   font-size: 1rem;
   color: #636363;
-  padding-top: 80px;
+  padding-top: 60px;
   height: 100%; }
 
 a:focus, a:hover {
@@ -69,14 +69,14 @@ ol, ul {
 
 .navbar-default {
   background-color: #ffffff; }
-  .navbar-default .navbar-header {
-    min-height: 80px; }
   .navbar-default .navbar-brand {
-    padding-top: 10px; }
+    padding-top: 4px; }
+    .navbar-default .navbar-brand img {
+      width: 58px; }
   .navbar-default .navbar-nav > li > a {
     font-size: 18px;
     font-size: 1.125rem;
-    padding: 30px 30px 30px 0; }
+    padding: 20px 30px 20px 0; }
     .navbar-default .navbar-nav > li > a:focus {
       color: #636363;
       outline: transparent; }
@@ -87,7 +87,7 @@ ol, ul {
     background-color: transparent; }
 
 .navbar-toggle {
-  margin: 27px auto;
+  margin: 18px auto;
   background: transparent;
   padding: 0;
   border: none; }
@@ -225,11 +225,17 @@ ol, ul {
 @media (min-width: 1200px) and (max-width: 1600px) {
   html {
     font-size: 12px; } }
+@media (min-width: 1600px) {
+  .slide-banner .image-banner .oil-rig {
+    bottom: -20px; } }
 @media (min-width: 1200px) {
   .owl-carousel {
     height: 100%; }
     .owl-carousel .owl-wrapper-outer {
       height: 100% !important; }
+
+  .navbar-default .navbar-brand {
+    width: 100%; }
 
   #footer {
     position: fixed;
