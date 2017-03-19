@@ -13,7 +13,7 @@ body {
   padding-top: 60px;
   height: 100%;
 }
-
+.mb20{margin-bottom: 20px !important;}
 a {
   &:focus, &:hover {
     color: $primary-color;
@@ -308,6 +308,7 @@ a {
     border-bottom: thin solid #eee;
     padding-bottom: 10px;
     margin-bottom: 14px;
+    cursor: pointer;
     &:last-child{
       border:none;
     }
