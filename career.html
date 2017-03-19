@@ -42,7 +42,7 @@
                 <img src="image/career/career.jpg" class="img-responsive" alt="">
                 <h1 class="subpage-title">Career</h1>
                 <p>Please send your resume to this application.</p>
-                <button class="btn btn-primary">Apply for a job <i class="fa fa-paper-plane-o"></i></button>
+                <button class="btn btn-primary" id ="btnSendEmail">Apply for a job <i class="fa fa-paper-plane-o"></i></button>
             </div>
         </div>
     </div>
@@ -55,5 +55,13 @@
 <!--OwlCarousel -->
 <script src="js/owlcarousel/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+$(document).ready(function() {
+  //var tmpsubject = "สมัครงาน";
+    $('#btnSendEmail').click(function() {
+      window.open('mailto:hr@tantawancorp.co.th?subject=[สมัครงาน]&body=เรียนผู้บริหารฝ่ายทรัยากรบุคคล'); //&body=body
+    });
+});
+</script>
 </body>
 </html>
