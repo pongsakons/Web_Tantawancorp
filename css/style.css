@@ -39,6 +39,11 @@ a:focus, a:hover {
   -ms-o-radius: 50px;
   border-radius: 50px; }
 
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+
 .wrapper-welcome-page {
   background: url("../image/bg-welcome-page.jpg") center top no-repeat #222222;
   padding-top: 0;
@@ -289,6 +294,9 @@ a:focus, a:hover {
     -ms-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
     -o-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); }
+
+.client-logo {
+  font-size: 0; }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
   html {

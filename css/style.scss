@@ -45,7 +45,11 @@ a {
   font-size: $font-18;
   @include border-radius(50px);
 }
-
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
 //Welcome-page
 .wrapper-welcome-page {
   background: url("../image/bg-welcome-page.jpg") center top no-repeat $black;
@@ -320,7 +324,9 @@ a {
     @include box-shadow($val-dropShadow-01);
   }
 }
-
+.client-logo{
+  font-size: 0;
+}
 //Responsive part
 @media (min-width: 1200px) and (max-width: 1600px) {
   html {
