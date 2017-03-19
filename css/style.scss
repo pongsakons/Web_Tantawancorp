@@ -1,7 +1,7 @@
 @import 'mixin';
 //common
 html {
-  font-size: 18px;
+  font-size: 16px;
   height: 100%;
 }
 
@@ -266,10 +266,11 @@ a {
 //subpage
 .wrapper.subpage {
   background-color: $white;
+  line-height: 1.8;
 }
 
 #content {
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   background-color: $white;
   min-height: 100%;
 }
@@ -278,6 +279,8 @@ a {
   background-color: transparent;
   padding: 20px 0;
   margin-bottom: 0;
+  font-size: 14px;
+  font-size: $font-14;
 }
 
 .subpage-title {
@@ -287,7 +290,7 @@ a {
 .modal-dialog {
   text-align: center;
   width: auto;
-  max-width: 70%;
+  max-width: 90%;
   margin: 30px auto;
 }
 
@@ -312,9 +315,9 @@ a {
 .img-zoom {
   cursor: pointer;
   @include transition(all 0.5s ease);
-  @include box-shadow($val-dropShadow-01);
   &:hover {
     @include box-shadow(none);
+    @include box-shadow($val-dropShadow-01);
   }
 }
 
