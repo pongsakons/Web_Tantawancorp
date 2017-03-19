@@ -14,6 +14,7 @@ function hamburgerToggle() {
     });
 }
 loadContentPage();
+
 $(document).ready(function () {
     $('img').on('click', function () {
         var image = $(this).attr('src');
@@ -43,7 +44,10 @@ $(document).ready(function () {
             owlCarousel.addClass("col-lg-10 col-lg-offset-1 visible-lg-block");
         })
     );
-
+    // tabs responsive
+    $(function() {
+        $('.nav-tabs').responsiveTabs();
+    });
 });
 
 
