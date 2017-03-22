@@ -302,11 +302,21 @@ a {
   text-align: center;
   width: auto;
   max-width: 90%;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 .modal-content {
   display: inline-block;
+  position: relative;
+  .fa{
+    position: absolute;
+    right: 0;
+    font-size: 22px;
+    font-size: $font-22;
+    bottom:100%;
+    color: $white;
+    cursor: pointer;
+  }
 }
 
 .list-address {
