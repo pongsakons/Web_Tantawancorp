@@ -6,7 +6,7 @@ function loadContentPage() {
     $("#script").load("script.html");
     $("#footer").load("footer.html");
     $("#navBar").load("navbar.html");
-    $(".breadcrumb").load("breadcrumb.html");
+    $("#breadcrumb").load("breadcrumb.html");
     $("#myModal").load("modal-img.html");
 }
 function hamburgerToggle() {
@@ -15,10 +15,7 @@ function hamburgerToggle() {
     });
 }
 loadContentPage();
-
 $(document).ready(function () {
-    var name = $("h1.subpage-title").text();
-    $(".breadcrumb .active").text(name);
     $('img').on('click', function () {
         var image = $(this).attr('src');
         //alert(image);
