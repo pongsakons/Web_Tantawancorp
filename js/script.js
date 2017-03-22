@@ -19,7 +19,6 @@ loadContentPage();
 $(document).ready(function () {
     var name = $("h1.subpage-title").text();
     $(".breadcrumb .active").text(name);
-    console.log(name);
     $('img').on('click', function () {
         var image = $(this).attr('src');
         //alert(image);
@@ -40,7 +39,7 @@ $(document).ready(function () {
                 "<i class='fa fa-angle-right'></i>"
             ],
             autoHeight: true,
-            //autoPlay:true,
+            autoPlay:true,
             slideSpeed: 1000
         },
         $(function () {
