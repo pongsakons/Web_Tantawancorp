@@ -13,12 +13,17 @@ body {
   padding-top: 60px;
   height: 100%;
 }
-.mb20{margin-bottom: 20px !important;}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
 a {
   &:focus, &:hover {
     color: $primary-color;
   }
 }
+
 .btn-default {
   background-color: transparent;
   color: $white;
@@ -45,11 +50,13 @@ a {
   font-size: $font-18;
   @include border-radius(50px);
 }
+
 .vcenter {
   display: inline-block;
   vertical-align: middle;
   float: none;
 }
+
 //Welcome-page
 .wrapper-welcome-page {
   background: url("../image/bg-welcome-page.jpg") center top no-repeat $black;
@@ -309,14 +316,16 @@ a {
     padding-bottom: 10px;
     margin-bottom: 14px;
     cursor: pointer;
-    &:last-child{
-      border:none;
+    &:last-child {
+      border: none;
     }
   }
 }
-.img-shadow{
+
+.img-shadow {
   @include box-shadow($val-dropShadow-01);
 }
+
 .img-zoom {
   cursor: pointer;
   @include transition(all 0.5s ease);
@@ -325,9 +334,33 @@ a {
     @include box-shadow($val-dropShadow-01);
   }
 }
-.client-logo{
+
+.client-logo {
   font-size: 0;
 }
+
+.nav-tabs {
+  margin-bottom: 20px;
+  & > li > a {
+    color: $grey-color;
+  }
+}
+
+.nav-tabs {
+  & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $primary-color;
+  }
+  & > li > a:hover {
+    border-color: transparent;
+  }
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: transparent;
+}
+
 //Responsive part
 @media (min-width: 1200px) and (max-width: 1600px) {
   html {

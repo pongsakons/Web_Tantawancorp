@@ -302,6 +302,21 @@ a:focus, a:hover {
 .client-logo {
   font-size: 0; }
 
+.nav-tabs {
+  margin-bottom: 20px; }
+  .nav-tabs > li > a {
+    color: #636363; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: #006ca2; }
+.nav-tabs > li > a:hover {
+  border-color: transparent; }
+
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: transparent; }
+
 @media (min-width: 1200px) and (max-width: 1600px) {
   html {
     font-size: 12px; } }
