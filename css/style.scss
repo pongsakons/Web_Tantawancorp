@@ -351,6 +351,7 @@ a {
     background-color: transparent;
     border-color: transparent;
     color: $primary-color;
+    border-bottom: 4px solid $primary-color;
   }
   & > li > a:hover {
     border-color: transparent;
@@ -359,6 +360,20 @@ a {
 
 .nav > li > a:focus, .nav > li > a:hover {
   background-color: transparent;
+}
+.list-group-item{
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  background-color: transparent;
+  &:first-child{
+    border-top-color: $light-grey;
+    border-bottom-color: $light-grey;
+  }
+  &:last-child{
+    border-bottom-color: $light-grey;}
+  .fa{
+    color: $medium-grey;
+  }
 }
 
 //Responsive part
