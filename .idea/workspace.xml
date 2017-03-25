@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="489e39b1-483a-4178-aecc-77f12adf72e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image/engineer/img01.jpg" afterPath="$PROJECT_DIR$/image/engineer/img01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css.map" afterPath="$PROJECT_DIR$/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.scss" afterPath="$PROJECT_DIR$/css/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/engineering.html" afterPath="$PROJECT_DIR$/engineering.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,19 +42,11 @@
       <file leaf-file-name="engineering.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/engineering.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="707">
-              <caret line="70" column="121" lean-forward="false" selection-start-line="70" selection-start-column="121" selection-end-line="70" selection-end-column="121" />
-              <caret line="71" column="121" lean-forward="false" selection-start-line="71" selection-start-column="121" selection-end-line="71" selection-end-column="121" />
-              <caret line="72" column="121" lean-forward="false" selection-start-line="72" selection-start-column="121" selection-end-line="72" selection-end-column="121" />
-              <caret line="73" column="121" lean-forward="false" selection-start-line="73" selection-start-column="121" selection-end-line="73" selection-end-column="121" />
-              <caret line="74" column="121" lean-forward="false" selection-start-line="74" selection-start-column="121" selection-end-line="74" selection-end-column="121" />
-              <caret line="75" column="121" lean-forward="false" selection-start-line="75" selection-start-column="121" selection-end-line="75" selection-end-column="121" />
-              <caret line="76" column="121" lean-forward="false" selection-start-line="76" selection-start-column="121" selection-end-line="76" selection-end-column="121" />
-              <caret line="77" column="121" lean-forward="false" selection-start-line="77" selection-start-column="121" selection-end-line="77" selection-end-column="121" />
-              <caret line="78" column="121" lean-forward="false" selection-start-line="78" selection-start-column="121" selection-end-line="78" selection-end-column="121" />
+            <state relative-caret-position="723">
+              <caret line="79" column="26" lean-forward="false" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
               <folding>
-                <marker date="1490437983584" expanded="true" signature="1300:1369" ph="..." />
-                <marker date="1490437983584" expanded="true" signature="1320:1357" ph="{...}" />
+                <marker date="1490438347029" expanded="true" signature="1300:1369" ph="..." />
+                <marker date="1490438347029" expanded="true" signature="1320:1357" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -438,12 +424,12 @@
       <workItem from="1490282802680" duration="2732000" />
       <workItem from="1490329783263" duration="1766000" />
       <workItem from="1490333428291" duration="405000" />
-      <workItem from="1490432629055" duration="3892000" />
+      <workItem from="1490432629055" duration="4255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143814000" />
+    <option name="totallyTimeSpent" value="144177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -751,19 +737,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/engineering.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="70" column="121" lean-forward="false" selection-start-line="70" selection-start-column="121" selection-end-line="70" selection-end-column="121" />
-          <caret line="71" column="121" lean-forward="false" selection-start-line="71" selection-start-column="121" selection-end-line="71" selection-end-column="121" />
-          <caret line="72" column="121" lean-forward="false" selection-start-line="72" selection-start-column="121" selection-end-line="72" selection-end-column="121" />
-          <caret line="73" column="121" lean-forward="false" selection-start-line="73" selection-start-column="121" selection-end-line="73" selection-end-column="121" />
-          <caret line="74" column="121" lean-forward="false" selection-start-line="74" selection-start-column="121" selection-end-line="74" selection-end-column="121" />
-          <caret line="75" column="121" lean-forward="false" selection-start-line="75" selection-start-column="121" selection-end-line="75" selection-end-column="121" />
-          <caret line="76" column="121" lean-forward="false" selection-start-line="76" selection-start-column="121" selection-end-line="76" selection-end-column="121" />
-          <caret line="77" column="121" lean-forward="false" selection-start-line="77" selection-start-column="121" selection-end-line="77" selection-end-column="121" />
-          <caret line="78" column="121" lean-forward="false" selection-start-line="78" selection-start-column="121" selection-end-line="78" selection-end-column="121" />
+        <state relative-caret-position="723">
+          <caret line="79" column="26" lean-forward="false" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
           <folding>
-            <marker date="1490437983584" expanded="true" signature="1300:1369" ph="..." />
-            <marker date="1490437983584" expanded="true" signature="1320:1357" ph="{...}" />
+            <marker date="1490438347029" expanded="true" signature="1300:1369" ph="..." />
+            <marker date="1490438347029" expanded="true" signature="1320:1357" ph="{...}" />
           </folding>
         </state>
       </provider>
