@@ -339,6 +339,9 @@ a:focus, a:hover {
   .list-group-item .fa {
     color: #999999; }
 
+.operation-map-pin div {
+  cursor: pointer; }
+
 @media (min-width: 1200px) and (max-width: 1600px) {
   html {
     font-size: 12px; } }

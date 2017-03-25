@@ -308,12 +308,12 @@ a {
 .modal-content {
   display: inline-block;
   position: relative;
-  .fa{
+  .fa {
     position: absolute;
     right: 0;
     font-size: 22px;
     font-size: $font-22;
-    bottom:100%;
+    bottom: 100%;
     color: $white;
     cursor: pointer;
   }
@@ -371,19 +371,25 @@ a {
 .nav > li > a:focus, .nav > li > a:hover {
   background-color: transparent;
 }
-.list-group-item{
+
+.list-group-item {
   border-bottom-color: transparent;
   border-top-color: transparent;
   background-color: transparent;
-  &:first-child{
+  &:first-child {
     border-top-color: $light-grey;
     border-bottom-color: $light-grey;
   }
-  &:last-child{
-    border-bottom-color: $light-grey;}
-  .fa{
+  &:last-child {
+    border-bottom-color: $light-grey;
+  }
+  .fa {
     color: $medium-grey;
   }
+}
+
+.operation-map-pin div {
+  cursor: pointer;
 }
 
 //Responsive part
