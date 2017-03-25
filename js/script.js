@@ -45,9 +45,7 @@ $(document).ready(function () {
         })
     );
     // tabs responsive
-    $(function () {
-        $('.nav-tabs').responsiveTabs();
-    });
+    // $(function () {
+    //     $('.nav-tabs').responsiveTabs();
+    // });
 });
-
-

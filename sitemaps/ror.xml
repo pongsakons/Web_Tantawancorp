@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://www.tantawancorp.co.th/</title>
+  <link>http://www.tantawancorp.co.th/</link>
+
+<item>
+     <link>http://www.tantawancorp.co.th/</link>
+     <title>www.tantawancorp.co.th</title>
+     <description>www.tantawancorp.co.th</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.tantawancorp.co.th/index-main.html</link>
+     <title>www.tantawancorp.co.th</title>
+     <description>www.tantawancorp.co.th</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.tantawancorp.co.th/history.html</link>
+     <title>www.tantawancorp.co.th</title>
+     <description>www.tantawancorp.co.th</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.tantawancorp.co.th/hse.html</link>
+     <title>www.tantawancorp.co.th</title>
+     <description>www.tantawancorp.co.th</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.tantawancorp.co.th/quality.html</link>
+     <title>www.tantawancorp.co.th</title>
+     <description>www.tantawancorp.co.th</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
