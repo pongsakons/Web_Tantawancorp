@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="489e39b1-483a-4178-aecc-77f12adf72e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css.map" afterPath="$PROJECT_DIR$/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.scss" afterPath="$PROJECT_DIR$/css/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/construction.html" afterPath="$PROJECT_DIR$/construction.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,12 +29,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="562">
               <caret line="396" column="22" lean-forward="false" selection-start-line="396" selection-start-column="22" selection-end-line="396" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="construction.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/construction.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="196" column="34" lean-forward="false" selection-start-line="196" selection-start-column="34" selection-end-line="196" selection-end-column="34" />
+              <folding>
+                <marker date="1490438733942" expanded="true" signature="1296:1365" ph="..." />
+                <marker date="1490438733942" expanded="true" signature="1316:1353" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,11 +174,11 @@
         <option value="$PROJECT_DIR$/org-chart.html" />
         <option value="$PROJECT_DIR$/project.html" />
         <option value="$PROJECT_DIR$/career.html" />
-        <option value="$PROJECT_DIR$/construction.html" />
         <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/operation-location.html" />
         <option value="$PROJECT_DIR$/engineering.html" />
         <option value="$PROJECT_DIR$/css/style.scss" />
+        <option value="$PROJECT_DIR$/construction.html" />
       </list>
     </option>
   </component>
@@ -427,12 +437,12 @@
       <workItem from="1490282802680" duration="2732000" />
       <workItem from="1490329783263" duration="1766000" />
       <workItem from="1490333428291" duration="405000" />
-      <workItem from="1490432629055" duration="4512000" />
+      <workItem from="1490432629055" duration="4641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144434000" />
+    <option name="totallyTimeSpent" value="144563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,17 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/construction.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="221" column="37" lean-forward="false" selection-start-line="221" selection-start-column="37" selection-end-line="221" selection-end-column="37" />
-          <folding>
-            <marker date="1490432284939" expanded="true" signature="1296:1365" ph="..." />
-            <marker date="1490432284939" expanded="true" signature="1316:1353" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/operation-location.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -746,6 +745,17 @@
         <state relative-caret-position="562">
           <caret line="396" column="22" lean-forward="false" selection-start-line="396" selection-start-column="22" selection-end-line="396" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/construction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="196" column="34" lean-forward="false" selection-start-line="196" selection-start-column="34" selection-end-line="196" selection-end-column="34" />
+          <folding>
+            <marker date="1490438733942" expanded="true" signature="1296:1365" ph="..." />
+            <marker date="1490438733942" expanded="true" signature="1316:1353" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
