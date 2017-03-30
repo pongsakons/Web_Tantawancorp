@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="489e39b1-483a-4178-aecc-77f12adf72e9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css.map" afterPath="$PROJECT_DIR$/css/style.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.scss" afterPath="$PROJECT_DIR$/css/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index-main.html" afterPath="$PROJECT_DIR$/index-main.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,27 +20,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="221" column="5" lean-forward="false" selection-start-line="221" selection-start-column="5" selection-end-line="221" selection-end-column="5" />
+            <state relative-caret-position="285">
+              <caret line="218" column="20" lean-forward="false" selection-start-line="218" selection-start-column="20" selection-end-line="218" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index-main.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index-main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index-main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="104" column="86" lean-forward="false" selection-start-line="104" selection-start-column="86" selection-end-line="104" selection-end-column="86" />
-              <caret line="80" column="86" lean-forward="false" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
+            <state relative-caret-position="208">
+              <caret line="65" column="54" lean-forward="true" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
               <folding>
                 <element signature="e#3143#3149#0" expanded="true" />
                 <element signature="e#3209#3215#0" expanded="true" />
-                <marker date="1490889310861" expanded="true" signature="1385:1454" ph="..." />
-                <marker date="1490889310861" expanded="true" signature="1405:1442" ph="{...}" />
+                <marker date="1490890995767" expanded="true" signature="1385:1454" ph="..." />
+                <marker date="1490890995767" expanded="true" signature="1405:1442" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -209,7 +211,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.navbar-brand</find>
       <find>common</find>
       <find>.footer-contact-list</find>
       <find>shadow</find>
@@ -239,6 +240,7 @@
       <find>.owl-carousel</find>
       <find>.gradient-banner</find>
       <find>image-banner</find>
+      <find>-height</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -276,8 +278,8 @@
         <option value="$PROJECT_DIR$/engineering.html" />
         <option value="$PROJECT_DIR$/construction.html" />
         <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/css/style.scss" />
         <option value="$PROJECT_DIR$/index-main.html" />
+        <option value="$PROJECT_DIR$/css/style.scss" />
       </list>
     </option>
   </component>
@@ -553,12 +555,12 @@
       <workItem from="1490432629055" duration="4641000" />
       <workItem from="1490458556728" duration="1570000" />
       <workItem from="1490799646449" duration="1242000" />
-      <workItem from="1490886289936" duration="3021000" />
+      <workItem from="1490886289936" duration="3912000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150396000" />
+    <option name="totallyTimeSpent" value="151287000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -925,25 +927,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="221" column="5" lean-forward="false" selection-start-line="221" selection-start-column="5" selection-end-line="221" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index-main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="104" column="86" lean-forward="false" selection-start-line="104" selection-start-column="86" selection-end-line="104" selection-end-column="86" />
-          <caret line="80" column="86" lean-forward="false" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
+        <state relative-caret-position="208">
+          <caret line="65" column="54" lean-forward="true" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
           <folding>
             <element signature="e#3143#3149#0" expanded="true" />
             <element signature="e#3209#3215#0" expanded="true" />
-            <marker date="1490889310861" expanded="true" signature="1385:1454" ph="..." />
-            <marker date="1490889310861" expanded="true" signature="1405:1442" ph="{...}" />
+            <marker date="1490890995767" expanded="true" signature="1385:1454" ph="..." />
+            <marker date="1490890995767" expanded="true" signature="1405:1442" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="218" column="20" lean-forward="false" selection-start-line="218" selection-start-column="20" selection-end-line="218" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
