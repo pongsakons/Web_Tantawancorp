@@ -192,13 +192,16 @@ a:focus, a:hover {
   .slide-banner .image-banner.-third {
     background-image: url("../image/bg-slide3.jpg"); }
 
-.owl-carousel {
+.owl-carousel-sub {
+  margin: 20px 0; }
+
+.owl-carousel.-main {
   background-color: #006ca2; }
-  .owl-carousel.owl-theme .owl-controls {
+  .owl-carousel.-main.owl-theme .owl-controls {
     text-align: right;
     position: absolute;
     top: 0; }
-    .owl-carousel.owl-theme .owl-controls .owl-buttons div {
+    .owl-carousel.-main.owl-theme .owl-controls .owl-buttons div {
       font-size: 42px;
       font-size: 2.625rem;
       text-align: center;
@@ -212,7 +215,7 @@ a:focus, a:hover {
       -ms-border-radius: 50%;
       -ms-o-radius: 50%;
       border-radius: 50%; }
-      .owl-carousel.owl-theme .owl-controls .owl-buttons div .fa {
+      .owl-carousel.-main.owl-theme .owl-controls .owl-buttons div .fa {
         position: absolute;
         left: 50%;
         top: 50%;
@@ -221,10 +224,10 @@ a:focus, a:hover {
         -o-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); }
-      .owl-carousel.owl-theme .owl-controls .owl-buttons div:hover {
+      .owl-carousel.-main.owl-theme .owl-controls .owl-buttons div:hover {
         background-color: #ffffff;
         color: #006ca2; }
-      .owl-carousel.owl-theme .owl-controls .owl-buttons div:first-child {
+      .owl-carousel.-main.owl-theme .owl-controls .owl-buttons div:first-child {
         margin-right: 20px; }
 
 #footer {
@@ -371,9 +374,9 @@ hr {
   .image-banner {
     min-height: 66%; }
 
-  .owl-carousel {
+  .owl-carousel.-main {
     height: 100%; }
-    .owl-carousel .owl-wrapper-outer {
+    .owl-carousel.-main .owl-wrapper-outer {
       height: 100% !important; }
 
   .navbar-default .navbar-header .navbar-brand {

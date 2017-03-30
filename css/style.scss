@@ -223,8 +223,10 @@ a {
     &.-third{background-image: url("../image/bg-slide3.jpg");}
   }
 }
-
-.owl-carousel {
+.owl-carousel-sub{
+  margin: 20px 0;
+}
+.owl-carousel.-main {
   background-color: $primary-color;
   &.owl-theme .owl-controls {
     text-align: right;
@@ -426,7 +428,7 @@ hr {
   .image-banner{
     min-height: 66%;
   }
-  .owl-carousel {
+  .owl-carousel.-main {
     height: 100%;
     .owl-wrapper-outer {
       height: 100% !important;
