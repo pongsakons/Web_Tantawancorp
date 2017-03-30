@@ -178,10 +178,18 @@ a:focus, a:hover {
     font-size: 1.375rem; }
 .slide-banner .image-banner {
   position: relative;
-  height: 54.62963%; }
+  height: 66%;
+  background-size: cover;
+  background-position: center center; }
   .slide-banner .image-banner .oil-rig {
     position: absolute;
     bottom: 0; }
+  .slide-banner .image-banner.-first {
+    background-image: url("../image/bg-slide1.jpg"); }
+  .slide-banner .image-banner.-second {
+    background-image: url("../image/bg-slide2.jpg"); }
+  .slide-banner .image-banner.-third {
+    background-image: url("../image/bg-slide3.jpg"); }
 
 .owl-carousel {
   background-color: #006ca2; }
@@ -350,12 +358,18 @@ hr {
   html {
     font-size: 12px; } }
 @media (min-width: 1600px) {
-  .slide-banner .image-banner .oil-rig {
-    bottom: -20px; }
-
   .navbar-default .navbar-header .navbar-brand {
     margin-left: 0; } }
 @media (min-width: 1200px) {
+  .owl-wrapper, .owl-item, .slide-banner, .slide-banner > .container-fluid, .slide-banner > .container-fluid > .row {
+    height: 100%; }
+
+  .gradient-banner {
+    min-height: 34%; }
+
+  .image-banner {
+    min-height: 66%; }
+
   .owl-carousel {
     height: 100%; }
     .owl-carousel .owl-wrapper-outer {

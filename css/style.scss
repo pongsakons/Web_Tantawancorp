@@ -210,11 +210,16 @@ a {
   }
   .image-banner {
     position: relative;
-    height: 590/1080*100%;
+    height: 66%;
+    background-size: cover;
+    background-position: center center;
     .oil-rig {
       position: absolute;
       bottom: 0;
     }
+    &.-first{background-image: url("../image/bg-slide1.jpg");}
+    &.-second{background-image: url("../image/bg-slide2.jpg");}
+    &.-third{background-image: url("../image/bg-slide3.jpg");}
   }
 }
 
@@ -405,15 +410,21 @@ hr {
 }
 
 @media (min-width: 1600px) {
-  .slide-banner .image-banner .oil-rig {
-    bottom: -20px;
-  }
   .navbar-default .navbar-header .navbar-brand {
     margin-left: 0;
   }
 }
 
 @media (min-width: 1200px) {
+  .owl-wrapper,.owl-item, .slide-banner, .slide-banner > .container-fluid, .slide-banner > .container-fluid > .row{
+    height: 100%;
+  }
+  .gradient-banner{
+    min-height: 34%;
+  }
+  .image-banner{
+    min-height: 66%;
+  }
   .owl-carousel {
     height: 100%;
     .owl-wrapper-outer {
