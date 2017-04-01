@@ -36,7 +36,7 @@ $(document).ready(function () {
                 "<i class='fa fa-angle-right'></i>"
             ],
             autoHeight: true,
-            autoPlay:true,
+            // autoPlay:true,
             slideSpeed: 1000
         },
         $(function () {

@@ -361,6 +361,11 @@ hr {
 @media (min-width: 1200px) and (max-width: 1600px) {
   html {
     font-size: 12px; } }
+@media (min-width: 2048px) {
+  .image-banner.-first {
+    background-image: url("../image/bg-slide1-2k.jpg") !important; }
+  .image-banner .oil-rig {
+    display: none; } }
 @media (min-width: 1600px) {
   .navbar-default .navbar-header .navbar-brand {
     margin-left: 0; } }
