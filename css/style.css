@@ -191,6 +191,9 @@ a:focus, a:hover {
     background-image: url("../image/bg-slide2.jpg"); }
   .slide-banner .image-banner.-third {
     background-image: url("../image/bg-slide3.jpg"); }
+  .slide-banner .image-banner.-four {
+    background-image: url("../image/bg-slide4.jpg"); }
+  
 
 .owl-carousel-sub {
   margin: 20px 0; }
