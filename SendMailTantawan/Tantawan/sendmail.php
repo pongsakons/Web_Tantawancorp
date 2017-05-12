@@ -2,20 +2,35 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
-<body>
+<body>  
 	
-<?php
+<?php 
 	// require_once('Mailer/class.phpmailer.php');
 
-  require_once('Mailer/PHPMailerAutoload.php');
+  require_once('Mailer/PHPMailerAutoload.php'); 
   require ("config/configuration.php");
 header('Content-Type: text/html; charset=utf-8');
-	$sumName = $_POST['firstname']." ".$_POST['lastname']." ".$_POST['phonenumber'];
-	$From = $_POST['emailaddress'];
-	$FromName = '=?utf-8?B?'.base64_encode($sumName).'?=';
-	$Subject = '=?utf-8?B?'.base64_encode($_POST['subject']).'?=';
-	$Body = $_POST['message'];
-	$ToMail = $_POST['toMail'];//;'admin@tantawancorp.co.th'
+
+	if($_POST['mailtype'] == "contact"){
+		$sumName = $_POST['firstname']." ".$_POST['lastname']." ".$_POST['phonenumber'];
+		$From = $_POST['emailaddress'];
+		$FromName = '=?utf-8?B?'.base64_encode($sumName).'?=';
+		$Subject = '=?utf-8?B?'.base64_encode($_POST['subject']).'?=';
+		$Body = $_POST['message'];
+		$ToMail = $_POST['toMail'];//;'admin@tantawancorp.co.th'
+	}else if($_POST['mailtype'] == "hr"){
+		$sumName = $_POST['firstname']." ".$_POST['lastname']." ".$_POST['phonenumber'];
+		$tmpSubject = "[สมัครงาน] ตำแหน่ง ".$_POST['position']." เงินเดือนที่ต้องการ ".$_POST['exspectedSalary'];
+		$From = $_POST['emailaddress'];
+		$FromName = '=?utf-8?B?'.base64_encode($sumName).'?=';
+		$Subject = '=?utf-8?B?'.base64_encode($tmpSubject).'?=';
+		$Body = "<br> เรียนผู้บริหารฝ่ายทรัยากรบุคคล <br> รายละเอียดผู้สมัครงาน <br> ชื่อ ".$sumName ;
+		$Body .= "<br> ตำแหน่ง ".$_POST['position']." เงินเดือนที่ต้องการ ".$_POST['exspectedSalary'];
+		$Body .= "<br> วันเกิด ".$_POST['birthdate']." อายุ ".$_POST['age']." ปี";
+		$Body .= "<br> อีเมล์ ".$_POST['emailaddress']." เบอร์ติดต่อ ".$_POST['phonenumber'];
+		$Body .= "<br> ที่อยู่ ".$_POST['address'];
+		$ToMail = $_POST['toMail'];//;'admin@tantawancorp.co.th'
+	}
 	//$Browserfile = $_POST['Browserfile'];
 	//$Browserfile = realpath($_POST['Browserfile']);
 	// $From = $_POST['From'];

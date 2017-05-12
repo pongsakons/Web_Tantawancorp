@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>www.tantawancorp.co.th</title>
+    <link rel="shortcut icon" href="image/tantawancorp_favicon.png" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Google font roboto-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:0,0" rel="stylesheet">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--OwlCarousel-->
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.theme.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
+    <meta name="keywords" content="Builder,Construction,Workshop,tantawan,ทานตะวัน คอนสทรัคชั่น แอนด์เซอร์วิส">
+    <meta name="description" content="Tantawancorp Builder Construction Workshop">
+    <meta name="author" content="Tantawancorp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-96392630-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body onload="onLoadMap(6,3)">
+    <div class="wrapper subpage">
+        <div id="navBar"></div>
+        <div id="content">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="item"><a href="index-main.html">Home</a></li>
+                    <li class="item active">Contact Us</li>
+                </ol>
+                <div class="content-inside">
+                    <!--Insert content here-->
+                    <h1 class="subpage-title">Contact Us</h1>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="list-address">
+                                <div onclick="onLoadMap(6,2)">
+                                    <h4><b><i class="fa fa-map-marker"></i> Head Quarter</b></h4>
+                                    <p>699/316 Moo 6, Tai Ban Rd., Tombon Tai-Ban, Aumpher Muang Samutprakarn, Samutprakarn
+                                        10280
+                                    </p>
+                                    <a href="https://maps.google.com/?q=13.56198051199522,100.5869307741523" target="_blank">Open google map</a>
+                                </div>
+                                <div onclick="onLoadMap(6,1)">
+                                    <h4><b><i class="fa fa-map-marker"></i> Rayong Workshop</b></h4>
+                                    <p>21 Moo 3 Soi 5, Tombon Nikompattana, Aumpher Nikompattana, Rayong 21180</p>
+                                    <a href="https://www.google.com/maps/place/TANTAWAN+CONSTRUCTION+AND+SERVICE+CO.,+LTD/@12.8324168,101.1501341,17z/data=!3m1!4b1!4m5!3m4!1s0x3102ef506e28f955:0x806a26d43c282dcf!8m2!3d12.8324168!4d101.1523228?hl=en" target="_blank">Open google map</a>
+                                </div>
+                                <div onclick="onLoadMap(6,0)">
+                                    <h4><b><i class="fa fa-map-marker"></i> Songkhla Workshop</b></h4>
+                                    <p>613/13 Moo 2, Tombon Phawong, Sonkhla-jana Rd., Aumpher Muang Songkhla, 90100</p>
+                                    <a href="https://maps.google.com/?q=7.113353,100.591223" target="_blank">Open google map</a>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary mb20" id="btnSendEmail">Contact Us <i class="fa fa-envelope-o"></i></button>
+                        </div>
+                        <div class="col-lg-7">
+                            <!--Insert map here-->
+                            <div id="map" style="width: 100%; height: 650px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="clearfix"></div>
+    </div>
+    <!--Import modal -->
+    <div id="myModal" class="modal fade" role="dialog"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--Google map api-->
+    <script type="text/javascript">
+        var onLoadMap = function (varzoom, varloc) {
+            var locations = [
+                ['Songkhla Workshop', 7.113353, 100.591223, 3], //7.1278896, 100.5852306,
+                ['Rayong Workshop', 12.8324168, 101.1523228, 2], //12.8301992, 101.1403038
+                ['Samutprakarn Office', 13.56198051199522, 100.5869307741523, 1], //13.5621043, 100.5880416
+                ['', 13.56198051199522, 100.5869307741523, 0]
+            ];
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: varzoom,
+                center: new google.maps.LatLng(locations[varloc][1], locations[varloc][2]),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+            if (varloc != 3) {
+                var coordInfoWindow = new google.maps.InfoWindow();
+                coordInfoWindow.setContent(locations[varloc][0]);
+                coordInfoWindow.setPosition(new google.maps.LatLng(locations[varloc][1], locations[varloc][2]));
+                coordInfoWindow.open(map);
+            } else {
+                for (i = 0; i < locations.length - 1; i++) {
+                    var coordInfoWindow = new google.maps.InfoWindow();
+                    coordInfoWindow.setContent(locations[i][0]);
+                    coordInfoWindow.setPosition(new google.maps.LatLng(locations[i][1], locations[i][2]));
+                    coordInfoWindow.open(map);
+                }
+            }
+
+            var infowindow = new google.maps.InfoWindow();
+
+            var marker, i;
+
+            for (i = 0; i < locations.length - 1; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map,
+                });
+
+                //1 show balloon
+                // google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                //   return function() {
+                //     infowindow.setContent(locations[i][0]);
+                //     infowindow.open(map, marker);
+                //   }
+                // })(marker, i));
+                //2 show and click
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        onLoadMap(varzoom, i);
+                    }
+                })(marker, i));
+
+                google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
+                    return function () {
+                        infowindow.setContent(locations[i][0]);
+                        infowindow.open(map, marker); //
+                    }
+                })(marker, i));
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCjgXYbVxuMX9CRNnH0j_qhokgNFSkbmYU"></script>
+    <!--OwlCarousel -->
+    <script src="js/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnSendEmail').click(function () {
+                window.location.href = 'mailto:contact@tantawancorp.co.th?subject=[ติดต่อ]&body=ผู้เกี่ยวข้อง'; //&body=body
+            });
+        });
+    </script>
+</body>
+
+</html>
