@@ -93,52 +93,40 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <ul class="list-group">
-                            <li class="list-group-item"><b>Opening Time</b>
+                            <li class="list-group-item"><b>Career Positions</b>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-lg-5"><i class="fa fa-clock-o"></i> Monday
-                                        </div>
-                                        <div class="col-lg-5">8:00-17:00
+                                        <div class="col-lg-10"><i class="fa fa-handshake-o"></i> Project Engineer
                                         </div>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-lg-5"><i class="fa fa-clock-o"></i> Tuesday
-                                        </div>
-                                        <div class="col-lg-5">8:00-17:00
+                                        <div class="col-lg-10"><i class="fa fa-handshake-o"></i> QA/QC Engineer
                                         </div>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-lg-5"><i class="fa fa-clock-o"></i> Wednesday
-                                        </div>
-                                        <div class="col-lg-5">8:00-17:00
+                                        <div class="col-lg-10"><i class="fa fa-handshake-o"></i> Procurement 
                                         </div>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-lg-5"><i class="fa fa-clock-o"></i> Thursdat
-                                        </div>
-                                        <div class="col-lg-5">8:00-17:00
+                                        <div class="col-lg-10"><i class="fa fa-handshake-o"></i> Safety Officer
                                         </div>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-lg-5"><i class="fa fa-clock-o"></i> Fridat
-                                        </div>
-                                        <div class="col-lg-5">8:00-17:00
+                                        <div class="col-lg-10"><i class="fa fa-handshake-o"></i> Supervisor(Fitter,Welder)
                                         </div>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-lg-5"><i class="fa fa-clock-o"></i> Seturday
-                                        </div>
-                                        <div class="col-lg-5">8:00-17:00
+                                        <div class="col-lg-10"><i class="fa fa-handshake-o"></i> Draftsman 
                                         </div>
                                     </div>
                                 </li>
@@ -185,7 +173,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="age" name="age" placeholder="Age" >
+                                    <input type="text" class="form-control" id="age" name="age" placeholder="Age">
                                 </div>
                             </div>
                             <div class="row">
@@ -217,7 +205,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <button type="submit" class="btn btn-primary" >Apply for a job <i class="fa fa-paper-plane-o"></i></button>
+                                    <button type="submit" class="btn btn-primary">Apply for a job <i class="fa fa-paper-plane-o"></i></button>
                                 </div>
                             </div>
                             <input type="hidden" id="toMail" name="toMail" value="hr@tantawancorp.co.th">
@@ -245,6 +233,36 @@
     <script src="js/jswaiting.js"></script>
     <script>
         $(document).ready(function () {
+            $("#exspectedSalary").keydown(function (e) {
+                // Allow: backspace, delete, tab, escape, enter and .
+                if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                    // Allow: Ctrl+A, Command+A
+                    (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+                    // Allow: home, end, left, right, down, up
+                    (e.keyCode >= 35 && e.keyCode <= 40)) {
+                    // let it happen, don't do anything
+                    return;
+                }
+                // Ensure that it is a number and stop the keypress
+                if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                    e.preventDefault();
+                }
+            });
+            $("#age").keydown(function (e) {
+                // Allow: backspace, delete, tab, escape, enter and .
+                if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                    // Allow: Ctrl+A, Command+A
+                    (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+                    // Allow: home, end, left, right, down, up
+                    (e.keyCode >= 35 && e.keyCode <= 40)) {
+                    // let it happen, don't do anything
+                    return;
+                }
+                // Ensure that it is a number and stop the keypress
+                if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                    e.preventDefault();
+                }
+            });
             //$("#exspectedSalary").numeric();
             //$("#age").numeric();
             //$("#phonenumber").numeric();
@@ -293,63 +311,62 @@
             $("#ShowSuccess").hide(1000);
         });
         var validator = function (email) {
-			var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-			return regex.test(email);
-		};
-		var hideevent = function () {
-			$("#ShowError").hide(1000);
-			$("#ShowSuccess").hide(1000);
-			$("#ShowErrorInput").hide(1000);
-			$("#ShowErrorFile").hide(1000);
-		};
-		var validatornull = function () {
-			if (!$('#firstname').val()) { return false; }
-			if (!$("#lastname").val()) { return false; }
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        };
+        var hideevent = function () {
+            $("#ShowError").hide(1000);
+            $("#ShowSuccess").hide(1000);
+            $("#ShowErrorInput").hide(1000);
+            $("#ShowErrorFile").hide(1000);
+        };
+        var validatornull = function () {
+            if (!$('#firstname').val()) { return false; }
+            if (!$("#lastname").val()) { return false; }
             if (!$("#position").val()) { return false; }
             if (!$("#phonenumber").val()) { return false; }
             if (!$("#exspectedSalary").val()) { return false; }
             if (!$("#birthdate").val()) { return false; }
             if (!$("#age").val()) { return false; }
-			if (!$("#emailaddress").val()) { return false; }
-			if (!$("#address").val()) { return false; }
-			return true;
-		};
+            if (!$("#emailaddress").val()) { return false; }
+            if (!$("#address").val()) { return false; }
+            return true;
+        };
 
         $("#frmHr").on('submit', (function (e) {
-			e.preventDefault();
-			hideevent();
-			// var FromName = $("#firstname").val() + " " + $("#lastname").val() + " " + $("#phonenumber").val();
-			// var From = $("#emailaddress").val();
-			// var Subject = $("#subject").val();
-			// var Body = $("#message").val();
-			// var Browserfile = $('#browserfile').val();
-			if (!validatornull()) {
-				$("#ShowErrorInput").show(1000);
-				return;
-			}
-			if (!validator($("#emailaddress").val())) {
-				$("#ShowError").show(1000);
-				return;
-			}
-			waitingDialog.show('The system is sending messages.');
+            e.preventDefault();
+            hideevent();
+            // var FromName = $("#firstname").val() + " " + $("#lastname").val() + " " + $("#phonenumber").val();
+            // var From = $("#emailaddress").val();
+            // var Subject = $("#subject").val();
+            // var Body = $("#message").val();
+            // var Browserfile = $('#browserfile').val();
+            if (!validatornull()) {
+                $("#ShowErrorInput").show(1000);
+                return;
+            }
+            if (!validator($("#emailaddress").val())) {
+                $("#ShowError").show(1000);
+                return;
+            }
+            waitingDialog.show('The system is sending messages.');
 
-			$.ajax({
-				url: "/SendMailTantawan/Tantawan/sendmail.php",
-				type: "POST",
-				data: new FormData(this),
-				contentType: false,
-				cache: false,
-				processData: false,
-				success: function (data) {
-					$("#ShowSuccess").show(1000);
-					waitingDialog.hide();
-				},
-				error: function () { }
+            $.ajax({
+                url: "/SendMailTantawan/Tantawan/sendmail.php",
+                type: "POST",
+                data: new FormData(this),
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function (data) {
+                    $("#ShowSuccess").show(1000);
+                    waitingDialog.hide();
+                },
+                error: function () { }
 
-			});
+            });
 
-		}));
-
+        }));
     </script>
 </body>
 
