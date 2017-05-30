@@ -90,14 +90,15 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <ul class="list-group" id="listGroup">
                             <li class="list-group-item"><b>Career Positions</b>
                         </ul>
                     </div>
-                    <div class="col-lg-9">
-                        <div id="ShowDetail" class="alert-dismissable fade in" style="display: none">
+                    <div class="col-lg-8">
+                        <div id="ShowDetail" class="alert-dismissable fade in" style="display: none;"><!-- border: 0.5px solid #eeeeee; -->
                         </div>
+                        <hr>
                         <form id="frmHr" action="" method="post">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -358,13 +359,13 @@
             $("#ShowDetail").hide(1000, function () {
                 $("#ShowDetail").empty();
                 $("#ShowDetail").append('<center><h2 class="subpage-title" >' + detail[0]['name'] + '</h2></center><br>');
-                $("#ShowDetail").append('<h5 > Qualification : </h5>');
-                var tmphtml = "<ul>";
+                $("#ShowDetail").append('<h4 style="margin-left: 1cm;"> Qualification : </h4>');
+                var tmphtml = "<ul style=margin-left: 1cm;>";
                 $.each(detail[0]['detail'], function (index, value) {
                     tmphtml += '<li>' + value + '</li>';
                 });
                 tmphtml += "</ul>";
-                $("#ShowDetail").append(tmphtml + "<hr>");
+                $("#ShowDetail").append(tmphtml+"<br>");
             });
             $("#ShowDetail").show(1000);
         }
