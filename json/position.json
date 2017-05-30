@@ -1,0 +1,132 @@
+{
+    "Position": [
+        {
+            "id": "ProjectEngineer",
+            "name": "Project Engineer",
+            "detail": [
+                "Thai national, age 25-40 years old.",
+                "At least 3 years’ experience in oil & gas and chemical, refinery plant industries.",
+                "Bachelor Degree in engineering or related field.",
+                "Good command in English. ",
+                "Good knowledge for project execution plan & management.",
+                "Well organize, planning and progress follow up.",
+                "Flexibility to travel and work in multiple locations."
+            ]
+        },
+        {
+            "id": "ProposalAndCostEngineer",
+            "name": "Proposal and Cost Engineer",
+            "detail": [
+                "Thai national, age 25-40 years old",
+                "At least 3 years’ experience in oil & gas and chemical, refinery plant industries.",
+                "Bachelor Degree in engineering or related field.",
+                "Good command in English.",
+                "Good knowledge in bidding, proposal, costing, budgeting, insurance, capital interest, import duty and taxes.",
+                "Flexibility to travel and work in multiple locations"
+            ]
+        },
+        {
+            "id": "PlanningEngineer",
+            "name": "Planning Engineer",
+            "detail": [
+                "Thai national, age 25-40 years old.",
+                "At least 3 years’ experience in oil & gas and chemical, refinery plant industries.",
+                "Bachelor Degree in engineering or related field.",
+                "Good command in English.",
+                "Good knowledge in planning software, technical writing, generate of procedures and presentation slides.",
+                "Flexibility to travel and work in multiple locations"
+            ]
+        },
+        {
+            "id": "QAQCEngineer",
+            "name": "QAQC Engineer",
+            "detail": [
+                "Thai national, age 25-40 years old.",
+                "At least 3 years’ experience in QA & QC works for oil & gas and chemical, refinery plant industries.",
+                "Bachelor Degree in engineering or related field.",
+                "Good command in English.",
+                "Qualified in Auditor Certificate, professional qualification such as AWS/CWI, CSWIS are advantage.",
+                "Flexibility to travel and work in multiple locations"
+            ]
+        },
+        {
+            "id": "CivilEngineer",
+            "name": "Civil Engineer",
+            "detail": [
+                "Thai national, age 25-40 years old.",
+                "At least 3 years’ experience in oil & gas and chemical, refinery plant industries.",
+                "Bachelor Degree in Civil or Structural Engineering or related field.",
+                "Good command in English.",
+                "Flexibility to travel and work in multiple locations"
+            ]
+        },
+        {
+            "id": "ProcurementEngineerOfficer",
+            "name": "Procurement Engineer / Officer",
+            "detail": [
+                "Thai national, age 26-40 years old.",
+                "At least 3 years’ experience in procurement/sourcing/Logistics business will be advantage.",
+                "Bachelor’s Degree or Higher in engineering or any field.",
+                "Experienced in ender & Contract Purchasing and procurement.",
+                "Has experience as project procurement leader will be advantage.",
+                "Good communication, analytical& presentation skills with pleasant personality.",
+                "Good command of Computer Literacy.",
+                "Good command in English.",
+                "Proven ability in negotiation and compliance."
+            ]
+        },
+        {
+            "id": "HRAdminOfficer",
+            "name": "HR & Admin. Officer",
+            "detail": [
+                "Thai nationality, age 25-32 years old.",
+                "At least 2 years’ experience in office HR & Administration.",
+                "Vocational 5 or Bachelor's Degree in related field.",
+                "Knowledge in HR procedures, office administration and procurement tasks.",
+                "Knowledge to Labour Law.",
+                "Pleasant personality, fast learner, enthusiastic, positive attitude and result oriented.",
+                "Skilled in using computers (like Excel, PowerPoint, etc.).",
+                "Good Communication both English & Thai.",
+                "Flexibility to travel and work in multiple locations"
+            ]
+        },
+        {
+            "id": "SafetyOfficer",
+            "name": "Safety Officer",
+            "detail": [
+                "Thai nationality, age 25-40 years old.",
+                "Bachelor's Degree in Occupational safety and health.",
+                "At least 3 years’ experience in oil & gas and chemical, refinery plant industries.",
+                "The ability to demonstrate the application of risk assessment to company operations and activities.",
+                "Good command in English.",
+                "Experience in ISO 14001, OHSAS 18001 are in advantage.",
+                "Flexibility to travel and work in multiple locations"
+            ]
+        },
+        {
+            "id": "Supervisor",
+            "name": "Supervisor",
+            "detail": [
+                "Thai nationality.",
+                "Vocational 3, 5 or Bachelor's Degree in related field.",
+                "At least 3 years’ experience in oil & gas and chemical, refinery plant industries.",
+                "Knowledge related to work discipline in construction.",
+                "Good interpersonal relationship,/ self-motivated/ Initiative."
+            ]
+        },
+        {
+            "id": "Draftsman",
+            "name": "Draftsman",
+            "detail": [
+                "เพศชาย เพศหญิง อายุ24 ปีขึ้นไป",
+                "การศึกษาวุฒิ ปวช ปวส. สาขาเทคนิคการเขียนแบบ",
+                "สามารถใช้โปรแกรม Auto cad / CD3 Max / Photoshop / Sketch up / ได้เป็นอย่างดีและสามารถใช้คอมพิวเตอร์ ช่วยในการเขียนแบบ 2 และ 3 มิติได้",
+                "มีความรับผิดชอบและกระตือรือร้นในการทำงาน",
+                "มีประสบการณ์งานทางด้าน Construction Oil & Gas จะได้รับการพิจารณาเป็นพิเศษ",
+                "มีความกระตือรือร้น คล่องแคล่ว มีความคิดสร้างสรรค์",
+                "มีระเบียนวินัย ซื่อสัตย์ ขยันอดทน ตรงต่อเวลาและมีความรับผิดชอบต่อหน้าที่",
+                "สามารถปฏิบัติงานต่างจังหวัดได้จะพิจารณาเป็นพิเศษ"
+            ]
+        }
+    ]
+}

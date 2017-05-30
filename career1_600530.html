@@ -68,6 +68,7 @@
                     <img src="image/career/career.jpg" class="img-responsive" alt="">
                     <h1 class="subpage-title">Career</h1>
                     <p>Please send your resume to this application.</p>
+
                 </div>
 
                 <div id="ShowSuccess" class="alert alert-success alert-dismissable" style="display: none">
@@ -91,13 +92,60 @@
 
                 <div class="row">
                     <div class="col-lg-3">
-                        <ul class="list-group" id="listGroup">
+                        <ul class="list-group">
                             <li class="list-group-item"><b>Career Positions</b>
+                                
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-10" id = "ProjectEngineer"><i class="fa fa-handshake-o"></i> Project Engineer
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-10" id ="ProposalAndCostEngineer"><i class="fa fa-handshake-o"></i> Proposal and Cost Engineer
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-10" id ="PlanningEngineer"><i class="fa fa-handshake-o"></i> Planning Engineer
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-10" id = "QAQCEngineer"><i class="fa fa-handshake-o"></i> QAQC Engineer
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-10" id="ProcurementEngineerOfficer"><i class="fa fa-handshake-o"></i> Procurement Engineer / Officer
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-10" id="SafetyOfficer"><i class="fa fa-handshake-o"></i> Safety Officer
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-10" id = "Supervisor"><i class="fa fa-handshake-o"></i> Supervisor
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-10" id="Draftsman"><i class="fa fa-handshake-o"></i> Draftsman
+                                        </div>
+                                    </div>
+                                </li>
                         </ul>
                     </div>
                     <div class="col-lg-9">
-                        <div id="ShowDetail" class="alert-dismissable fade in" style="display: none">
-                        </div>
                         <form id="frmHr" action="" method="post">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -123,13 +171,16 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-sm-6">
+
                                     <div class="form-group">
                                         <div id="from-datepicker" class="input-append date">
                                             <input id="birthdate" name="birthdate" class="form-control" data-date-format="dd/mm/yyyy" type="text" placeholder="Birthdate*"></input>
                                             <!--<span class="add-on" /><i class="icon-th"></i></span>-->
                                         </div>
+
                                         <!--<input type="text" class="form-control" value="02-16-2012" id="dp1">-->
                                         <!--<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject*">-->
                                     </div>
@@ -175,10 +226,14 @@
                         </form>
                     </div>
                 </div>
+
+
             </div>
+
         </div>
         <div id="footer" class="clearfix"></div>
     </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -191,7 +246,7 @@
     <script src="js/jswaiting.js"></script>
     <script>
         $(document).ready(function () {
-
+            
             $("#exspectedSalary").keydown(function (e) {
                 // Allow: backspace, delete, tab, escape, enter and .
                 if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
@@ -207,7 +262,7 @@
                     e.preventDefault();
                 }
             });
-
+            
             $("#age").keydown(function (e) {
                 // Allow: backspace, delete, tab, escape, enter and .
                 if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
@@ -227,7 +282,7 @@
             //     window.location.href = 'mailto:hr@tantawancorp.co.th?subject=[สมัครงาน]&body=เรียนผู้บริหารฝ่ายทรัยากรบุคคล'; //&body=body
             // });
         });
-
+ 
         $(function () {
             var CurrentDate = new Date();
             var nbYearsToAdd = -15;
@@ -311,63 +366,6 @@
                 error: function () { }
             });
         }));
-
-        $.ajax({
-            type: "POST",
-            url: "json/position.json",
-            dataType: "json",
-            success: function (result) {
-                $.each(result, function (index, value) {
-                    $.each(value, function (index2, value2) {
-                        builderList($("#listGroup"), value2['id'], value2['name']);
-                    });
-                });
-                builderOnClick("ProjectEngineer");
-            }, error: function (jqXHR, textStatus, errorThrown) {
-                console.log(jqXHR.toString());
-            }
-        });
-
-        var builderList = function (obj, id, name) {
-            obj.append('<li class=list-group-item><div class=row><div style="cursor:pointer;" class=col-lg-10 id=' + id + ' onclick=builderOnClick("' + id + '")><i class="fa fa-handshake-o"></i> ' + name + '</div></div></li>');
-        }
-        var builderOnClick = function (objName) {
-            $.ajax({
-                type: "POST",
-                url: "json/position.json",
-                dataType: "json",
-                success: function (result) {
-                    //search of json
-                    var resultGrep = $.grep(result.Position, function (element, index) {
-                        return (element.id === objName);
-                    });
-                    builderListData(resultGrep);
-                    $.each(result, function (index, value) {
-                        $.each(value, function (index2, value2) {
-                            $("#" + value2['id']).css({ "color": "black", "font-size": "100%" });
-                        });
-                    });
-                    $("#" + objName).css({ "color": "green", "font-size": "105%" });
-
-                }, error: function (jqXHR, textStatus, errorThrown) {
-                    console.log(jqXHR.toString());
-                }
-            });
-        }
-        var builderListData = function (detail) {
-            $("#ShowDetail").hide(1000, function () {
-                $("#ShowDetail").empty();
-                $("#ShowDetail").append('<center><h2 class="subpage-title" >' + detail[0]['name'] + '</h2></center><br>');
-                $("#ShowDetail").append('<h5 > Qualification : </h5>');
-                var tmphtml = "<ul>";
-                $.each(detail[0]['detail'], function (index, value) {
-                    tmphtml += '<li>' + value + '</li>';
-                });
-                tmphtml += "</ul>";
-                $("#ShowDetail").append(tmphtml + "<hr>");
-            });
-            $("#ShowDetail").show(1000);
-        }
     </script>
 </body>
 
